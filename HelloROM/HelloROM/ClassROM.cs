@@ -48,7 +48,6 @@ namespace HelloROM
 
     class ROMs : IEnumerable
     {
-        List<ROM> _list;
         private ROM[] _roms;
         public ROMs (ROM[] pArray)
         {
@@ -113,6 +112,29 @@ namespace HelloROM
                 if (_roms[i].GetName() == _name)
                     return i;
             return -1;
+        }
+
+        public void Add (ROM _rom)
+        {
+            Array.Resize(ref _roms, _roms.Length + 1);
+            _roms[_roms.Length - 1] = _rom;
+        }
+
+        private void Replace (int first, int second)
+        {
+            ROM temp;
+            temp = _roms[first];
+            _roms[first] = _roms[second];
+            _roms[second] = temp;
+        }
+
+        public void Remove (int _pos)
+        {
+            for (int i = _pos; i < _roms.Length - 1; i++)
+            {
+                Replace(i, i + 1);
+            }
+            Array.Resize(ref _roms, _roms.Length - 1);
         }
     }
 }
