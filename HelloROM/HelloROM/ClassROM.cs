@@ -7,13 +7,18 @@ namespace HelloROM
 {
     class ROM
     {
-        string Name = "AOSP";//имя прошивки
-        string Base = "AOSP";//прошивка, на которой базируется прошивка, обычно это Lineage OS/CyanogenMod или AOSP
-        double AndroidVersion = 9.0;//последняя версия Android
-        double ROMVersion = 9.0;//последняя версия прошивки, есть не у всех
-        string Codename = "Pie";//к примеру, у CarbonROM 7.0 (9.0) кодовое имя - OPAL, но оно есть мало у кого
+        public string Name { get; set; } = "AOSP";//имя прошивки
+        public string Base { get; set; } = "AOSP";//прошивка, на которой базируется прошивка, обычно это Lineage OS/CyanogenMod или AOSP
+        public double AndroidVersion { get; set; } = 9.0;//последняя версия Android
+        public double ROMVersion = 9.0;//последняя версия прошивки, есть не у всех
+        public string Codename = "Pie";//к примеру, у CarbonROM 7.0 (9.0) кодовое имя - OPAL, но оно есть мало у кого
         //string[] Features;//набор настроек
         //string[] Devices;//официально поддерживаемые усройства
+
+        public ROM ()
+        {
+
+        }
 
         public ROM (string _Name, double _AndroidVersion, string _Base)
         {
@@ -49,6 +54,12 @@ namespace HelloROM
     class ROMs : IEnumerable
     {
         private ROM[] _roms;
+
+        public ROMs ()
+        {
+
+        }
+
         public ROMs (ROM[] pArray)
         {
             _roms = new ROM[pArray.Length];

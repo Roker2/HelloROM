@@ -12,6 +12,11 @@ namespace HelloROM
         public MainPage()
         {
             InitializeComponent();
+            test.ItemsSource = new List<ROM>
+            {
+                new ROM("CarbonROM", 9.0, "AOSP"),
+                new ROM("Lineage OS", 9.0, "AOSP")
+            };
         }
     }
 }

@@ -12,11 +12,6 @@ namespace HelloROM
         //2) AndroidVersion
         //3) Base
 
-        ROMList()
-        {
-
-        }
-
         Label header = new Label
         {
             Text = "ROM List",
