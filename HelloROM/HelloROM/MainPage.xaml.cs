@@ -19,7 +19,7 @@ namespace HelloROM
                 new ROM("Lineage OS", 9.0, "AOSP")
             };
             ROMs rOMs = new ROMs(ROMArray);
-            test.ItemsSource = rOMs;
+            ROMList.ItemsSource = rOMs;
         }
     }
 }

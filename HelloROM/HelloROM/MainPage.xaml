@@ -10,7 +10,7 @@
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
-        <ListView x:Name="test">
+        <ListView x:Name="ROMList">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Path = Name}" />
