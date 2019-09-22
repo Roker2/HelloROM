@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,13 @@ namespace HelloROM
         public MainPage()
         {
             InitializeComponent();
-            test.ItemsSource = new List<ROM>
+            ROM[] ROMArray = new ROM[2]
             {
                 new ROM("CarbonROM", 9.0, "AOSP"),
                 new ROM("Lineage OS", 9.0, "AOSP")
             };
+            ROMs rOMs = new ROMs(ROMArray);
+            test.ItemsSource = rOMs;
         }
     }
 }
