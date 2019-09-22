@@ -13,7 +13,7 @@
         <ListView x:Name="ROMList">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Path = Name}" />
+                    <TextCell Text="{Binding Path = Name}" Detail="{Binding Path = Base}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
