@@ -26,13 +26,13 @@ namespace HelloROM
 
         private void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            ROM rOM = e.Item as ROM;
+            DisplayAlert(rOM.Name, null, "OK");
         }
 
         private void ROMList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            ROM rOM = e.SelectedItem as ROM;
-            DisplayAlert(rOM.Name, null, "OK");
+            ROMList.SelectedItem = null;
         }
     }
 }
