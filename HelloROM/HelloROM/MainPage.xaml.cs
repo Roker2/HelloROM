@@ -16,7 +16,7 @@ namespace HelloROM
             InitializeComponent();
             ROM[] ROMArray = new ROM[]
             {
-                new ROM("CarbonROM", 9.0, "AOSP"),
+                new ROM("CarbonROM", 9.0, "AOSP", "https://github.com/Roker2/HelloROM/raw/master/Images/CarbonROM.png"),
                 new ROM("Lineage OS", 9.0, "AOSP"),
                 new ROM("Resurrection Remix", 9.0, "Lineage OS")
             };
@@ -24,10 +24,11 @@ namespace HelloROM
             ROMList.ItemsSource = rOMs;
         }
 
-        private void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ROM rOM = e.Item as ROM;
-            DisplayAlert(rOM.Name, rOM.Name + " is based on " + rOM.Base + ".", "OK");
+            //DisplayAlert(rOM.Name, rOM.Name + " is based on " + rOM.Base + ".", "OK");
+            await Navigation.PushAsync(new ROMInfPage(rOM.Name, rOM.Name + " is based on " + rOM.Base + ".", rOM.Image));
         }
 
         private void ROMList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
