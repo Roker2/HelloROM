@@ -18,7 +18,7 @@
                             <!-- <StackLayout HorizontalOptions="Start"> -->
                             <!-- <ffimageloading:CachedImage Source ="{Binding Image}" WidthRequest="30" HeightRequest="30"/> -->
                                 <!-- </StackLayout> -->
-                                <Label Text="{Binding Path = Name}"/>
+                            <Label Text="{Binding Path = Name}"/>
                             <Label Text="{Binding Path = Base}"/>
                         </StackLayout>
                     </ViewCell>
