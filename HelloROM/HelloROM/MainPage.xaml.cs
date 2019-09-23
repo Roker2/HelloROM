@@ -27,7 +27,7 @@ namespace HelloROM
         private void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ROM rOM = e.Item as ROM;
-            DisplayAlert(rOM.Name, null, "OK");
+            DisplayAlert(rOM.Name, rOM.Name + " is based on " + rOM.Base + ".", "OK");
         }
 
         private void ROMList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
