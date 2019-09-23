@@ -17,7 +17,7 @@ namespace HelloROM
             ROM[] ROMArray = new ROM[]
             {
                 new ROM("CarbonROM", 9.0, "AOSP", "https://github.com/Roker2/HelloROM/raw/master/Images/CarbonROM.png"),
-                new ROM("Lineage OS", 9.0, "AOSP"),
+                new ROM("Lineage OS", 9.0, "AOSP", "https://avatars3.githubusercontent.com/u/24304779"),
                 new ROM("Resurrection Remix", 9.0, "Lineage OS")
             };
             ROMs rOMs = new ROMs(ROMArray);
