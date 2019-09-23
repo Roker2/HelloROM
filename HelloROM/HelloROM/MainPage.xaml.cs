@@ -17,7 +17,8 @@ namespace HelloROM
             ROM[] ROMArray = new ROM[]
             {
                 new ROM("CarbonROM", 9.0, "AOSP"),
-                new ROM("Lineage OS", 9.0, "AOSP")
+                new ROM("Lineage OS", 9.0, "AOSP"),
+                new ROM("Resurrection Remix", 9.0, "Lineage OS")
             };
             ROMs rOMs = new ROMs(ROMArray);
             ROMList.ItemsSource = rOMs;
