@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloROM"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="HelloROM.ROMInfPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ffimageloading:CachedImage Source ="https://github.com/Roker2/HelloROM/raw/master/Images/404.png" WidthRequest="100" HeightRequest="100"/>
+            <Label x:Name="ROMName" FontSize="30"/>
+            <Label x:Name="ROMInf"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

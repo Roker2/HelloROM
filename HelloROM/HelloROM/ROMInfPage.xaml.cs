@@ -16,5 +16,12 @@ namespace HelloROM
 		{
 			InitializeComponent ();
 		}
+        
+        public ROMInfPage(string Name, string Inf)
+        {
+            InitializeComponent();
+            ROMName.Text = Name;
+            ROMInf.Text = Inf;
+        }
 	}
 }
