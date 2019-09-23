@@ -23,5 +23,10 @@ namespace HelloROM
             ROMs rOMs = new ROMs(ROMArray);
             ROMList.ItemsSource = rOMs;
         }
+
+        private void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
     }
 }
