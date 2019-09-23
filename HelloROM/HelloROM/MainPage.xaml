@@ -7,9 +7,9 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="@strings/mainpagestring"
+        <!-- <Label Text="@strings/mainpagestring"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand" /> -->
         <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
