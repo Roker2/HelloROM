@@ -16,12 +16,13 @@ namespace HelloROM
 		{
 			InitializeComponent ();
 		}
-        
-        public ROMInfPage(string Name, string Inf)
+
+        public ROMInfPage(string Name, string Inf, string Image = "https://github.com/Roker2/HelloROM/raw/master/Images/404.png")
         {
             InitializeComponent();
             ROMName.Text = Name;
             ROMInf.Text = Inf;
+            ROMPic.Source = Image;
         }
-	}
+    }
 }

@@ -6,7 +6,7 @@
              x:Class="HelloROM.ROMInfPage">
     <ContentPage.Content>
         <StackLayout>
-            <ffimageloading:CachedImage Source ="https://github.com/Roker2/HelloROM/raw/master/Images/404.png" WidthRequest="100" HeightRequest="100"/>
+            <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100"/>
             <Label x:Name="ROMName" FontSize="30"/>
             <Label x:Name="ROMInf"/>
         </StackLayout>
