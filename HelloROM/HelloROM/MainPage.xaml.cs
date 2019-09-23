@@ -14,7 +14,7 @@ namespace HelloROM
         public MainPage()
         {
             InitializeComponent();
-            ROM[] ROMArray = new ROM[2]
+            ROM[] ROMArray = new ROM[]
             {
                 new ROM("CarbonROM", 9.0, "AOSP"),
                 new ROM("Lineage OS", 9.0, "AOSP")
