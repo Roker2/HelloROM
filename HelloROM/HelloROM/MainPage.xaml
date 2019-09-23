@@ -10,7 +10,7 @@
         <Label Text="@strings/mainpagestring"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <ListView x:Name="ROMList">
+        <ListView x:Name="ROMList" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -18,8 +18,8 @@
                             <!-- <StackLayout HorizontalOptions="Start"> -->
                             <!-- <ffimageloading:CachedImage Source ="{Binding Image}" WidthRequest="30" HeightRequest="30"/> -->
                                 <!-- </StackLayout> -->
-                            <Label Text="{Binding Path = Name}"/>
-                            <Label Text="{Binding Path = Base}"/>
+                            <Label Text="{Binding Path = Name}" FontSize="17"/>
+                            <Label Text="{Binding Path = Base}" FontSize="9"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
