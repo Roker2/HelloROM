@@ -28,5 +28,11 @@ namespace HelloROM
         {
 
         }
+
+        private void ROMList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            ROM rOM = e.SelectedItem as ROM;
+            DisplayAlert(rOM.Name, null, "OK");
+        }
     }
 }

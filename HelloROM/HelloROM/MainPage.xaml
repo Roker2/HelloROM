@@ -10,7 +10,7 @@
         <Label Text="@strings/mainpagestring"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped">
+        <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
