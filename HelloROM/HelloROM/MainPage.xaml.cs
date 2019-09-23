@@ -18,7 +18,7 @@ namespace HelloROM
             {
                 new ROM("CarbonROM", 9.0, "AOSP", "https://github.com/Roker2/HelloROM/raw/master/Images/CarbonROM.png"),
                 new ROM("Lineage OS", 9.0, "AOSP", "https://avatars3.githubusercontent.com/u/24304779"),
-                new ROM("Resurrection Remix", 9.0, "Lineage OS")
+                new ROM("Resurrection Remix", 9.0, "Lineage OS", "https://avatars3.githubusercontent.com/u/4931972")
             };
             ROMs rOMs = new ROMs(ROMArray);
             ROMList.ItemsSource = rOMs;
