@@ -12,6 +12,7 @@ namespace HelloROM
         public double AndroidVersion { get; set; } = 9.0;//последняя версия Android
         public double ROMVersion = 9.0;//последняя версия прошивки, есть не у всех
         public string Codename = "Pie";//к примеру, у CarbonROM 7.0 (9.0) кодовое имя - OPAL, но оно есть мало у кого
+        public string Image = "https://github.com/Roker2/HelloROM/raw/master/Images/404.png";
         //string[] Features;//набор настроек
         //string[] Devices;//официально поддерживаемые усройства
 
@@ -27,13 +28,21 @@ namespace HelloROM
             Base = _Base;
         }
 
-        public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
+        public ROM (string _Name, double _AndroidVersion, string _Base, string _Image)
+        {
+            Name = _Name;
+            AndroidVersion = _AndroidVersion;
+            Base = _Base;
+            Image = _Image;
+        }
+
+        /*public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
         {
             Name = _Name;
             AndroidVersion = _AndroidVersion;
             Base = _Base;
             Codename = _CodeName;
-        }
+        }*/
 
         public string GetName()
         {

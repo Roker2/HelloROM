@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HelloROM"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="HelloROM.MainPage">
 
     <StackLayout>
@@ -9,11 +10,18 @@
         <Label Text="@strings/mainpagestring"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-
         <ListView x:Name="ROMList">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Path = Name}" Detail="{Binding Path = Base}"/>
+                    <ViewCell>
+                        <StackLayout>
+                            <!-- <StackLayout HorizontalOptions="Start"> -->
+                            <!-- <ffimageloading:CachedImage Source ="{Binding Image}" WidthRequest="30" HeightRequest="30"/> -->
+                                <!-- </StackLayout> -->
+                                <Label Text="{Binding Path = Name}"/>
+                            <Label Text="{Binding Path = Base}"/>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
