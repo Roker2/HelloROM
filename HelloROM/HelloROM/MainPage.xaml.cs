@@ -27,7 +27,7 @@ namespace HelloROM
         private async void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ROM rOM = e.Item as ROM;
-            await Navigation.PushAsync(new ROMInfPage(rOM.Name, rOM.Name + " is based on " + rOM.Base + ".", rOM.Image));
+            await Navigation.PushAsync(new ROMInfPage(rOM));
         }
 
         private void ROMList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
