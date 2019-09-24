@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HelloROM
 {
-    class ROM
+    public class ROM
     {
         public string Name { get; set; } = "AOSP";//имя прошивки
         public string Base { get; set; } = "AOSP";//прошивка, на которой базируется прошивка, обычно это Lineage OS/CyanogenMod или AOSP
