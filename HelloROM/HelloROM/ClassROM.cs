@@ -22,19 +22,17 @@ namespace HelloROM
 
         }
 
-        public ROM (string _Name, double _AndroidVersion, string _Base)
-        {
-            Name = _Name;
-            AndroidVersion = _AndroidVersion;
-            Base = _Base;
-        }
-
-        public ROM (string _Name, double _AndroidVersion, string _Base, string _Image)
+        public ROM (string _Name, double _AndroidVersion, string _Base, string _Image = null, string _Site = null)
         {
             Name = _Name;
             AndroidVersion = _AndroidVersion;
             Base = _Base;
             Image = _Image;
+            if (Image == null)
+                Image = "https://github.com/Roker2/HelloROM/raw/master/Images/404.png";
+            SiteUrl = _Site;
+            if (SiteUrl == null)
+                SiteUrl = "None";
         }
 
         /*public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
