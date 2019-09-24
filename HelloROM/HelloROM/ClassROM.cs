@@ -13,6 +13,7 @@ namespace HelloROM
         public double ROMVersion = 9.0;//последняя версия прошивки, есть не у всех
         public string Codename = "Pie";//к примеру, у CarbonROM 7.0 (9.0) кодовое имя - OPAL, но оно есть мало у кого
         public string Image = "https://github.com/Roker2/HelloROM/raw/master/Images/404.png";
+        public string SiteUrl = "None";
         //string[] Features;//набор настроек
         //string[] Devices;//официально поддерживаемые усройства
 
