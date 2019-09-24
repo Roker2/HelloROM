@@ -24,5 +24,13 @@ namespace HelloROM
             ROMInf.Text = Inf;
             ROMPic.Source = Image;
         }
+
+        public ROMInfPage(ROM _rom)
+        {
+            InitializeComponent();
+            ROMName.Text = _rom.Name;
+            ROMInf.Text = _rom.Name + " is based on " + _rom.Base + ".";
+            ROMPic.Source = _rom.Image;
+        }
     }
 }
