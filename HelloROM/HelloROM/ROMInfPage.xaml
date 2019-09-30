@@ -9,7 +9,7 @@
             <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100"/>
             <Label x:Name="ROMName" FontSize="30"/>
             <StackLayout Orientation="Horizontal">
-                <Label Text="Site: "/>
+                <Label Text="Site:"/>
                 <Label x:Name="ROMSite"/>
             </StackLayout>
             <Label x:Name="ROMInf"/>
