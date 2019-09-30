@@ -4,24 +4,22 @@
              xmlns:local="clr-namespace:HelloROM"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="HelloROM.MainPage">
-    <ScrollView>
-        <StackLayout>
-            <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <ffimageloading:CachedImage x:Name="ROMPic" Source="{Binding Path=Image}" WidthRequest="100" HeightRequest="100"/>
-                                <StackLayout>
-                                    <Label Text="{Binding Path = Name}" FontSize="17"/>
-                                    <Label Text="{Binding Path = Base}" FontSize="9"/>
-                                </StackLayout>
+    <StackLayout>
+        <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <ffimageloading:CachedImage x:Name="ROMPic" Source="{Binding Path=Image}" WidthRequest="100" HeightRequest="100"/>
+                            <StackLayout>
+                                <Label Text="{Binding Path = Name}" FontSize="17"/>
+                                <Label Text="{Binding Path = Base}" FontSize="9"/>
                             </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
-    </ScrollView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 
 </ContentPage>
