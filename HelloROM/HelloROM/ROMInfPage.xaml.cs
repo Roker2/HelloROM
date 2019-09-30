@@ -31,7 +31,7 @@ namespace HelloROM
             ROMName.Text = _rom.Name;
             ROMInf.Text = _rom.Name + " is based on " + _rom.Base + ".";
             ROMPic.Source = _rom.Image;
-            ROMSite.Text = "Site: " + _rom.SiteUrl;
+            ROMSite.Text = _rom.SiteUrl;
         }
     }
 }

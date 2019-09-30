@@ -8,7 +8,10 @@
         <StackLayout>
             <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100"/>
             <Label x:Name="ROMName" FontSize="30"/>
-            <Label x:Name="ROMSite"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Site: "/>
+                <Label x:Name="ROMSite"/>
+            </StackLayout>
             <Label x:Name="ROMInf"/>
         </StackLayout>
     </ContentPage.Content>
