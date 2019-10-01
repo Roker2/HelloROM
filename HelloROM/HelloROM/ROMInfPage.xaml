@@ -10,7 +10,7 @@
             <Label x:Name="ROMName" FontSize="30"/>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Site:"/>
-                <Label x:Name="ROMSite"/>
+                <Label x:Name="ROMSite" TextColor="Blue"/>
             </StackLayout>
             <Label x:Name="ROMInf"/>
         </StackLayout>
