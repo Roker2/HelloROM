@@ -32,6 +32,12 @@ namespace HelloROM
             ROMInf.Text = _rom.Name + " is based on " + _rom.Base + ".";
             ROMPic.Source = _rom.Image;
             ROMSite.Text = _rom.SiteUrl;
+            var tapOpenURI = new TapGestureRecognizer();
+            tapOpenURI.Tapped += (s, e) =>
+            {
+                Device.OpenUri(new Uri(ROMSite.Text));
+            };
+            ROMSite.GestureRecognizers.Add(tapOpenURI);
         }
     }
 }
