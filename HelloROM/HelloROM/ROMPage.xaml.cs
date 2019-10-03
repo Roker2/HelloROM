@@ -30,6 +30,7 @@ namespace HelloROM
                 Device.OpenUri(new Uri(ROMSite.Text));
             };
             ROMSite.GestureRecognizers.Add(tapOpenURI);
+            ROMScreensots.ItemsSource = _rom.Screenshots;
         }
     }
 }
