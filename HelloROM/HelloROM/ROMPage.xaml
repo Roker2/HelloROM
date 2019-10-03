@@ -24,11 +24,13 @@
         </ContentPage.Content>
     </ContentPage>
     <CarouselPage x:Name="ROMScreensots" Title="Screenshots">
-        <!--<CarouselPage.ItemTemplate>
+        <CarouselPage.ItemTemplate>
             <DataTemplate>
-                <ffimageloading:CachedImage Source="{Binding}"/>
+                <ContentPage>
+                    <ffimageloading:CachedImage Source="{Binding Path=.}"/>
+                </ContentPage>
             </DataTemplate>
-        </CarouselPage.ItemTemplate>-->
+        </CarouselPage.ItemTemplate>
     </CarouselPage>
   <ContentPage Title="Tab 3" />
 </TabbedPage>
