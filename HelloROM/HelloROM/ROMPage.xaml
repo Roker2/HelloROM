@@ -23,6 +23,12 @@
             </StackLayout>
         </ContentPage.Content>
     </ContentPage>
-  <ContentPage Title="Tab 2" />
+    <CarouselPage x:Name="ROMScreensots" Title="Screenshots">
+        <!--<CarouselPage.ItemTemplate>
+            <DataTemplate>
+                <ffimageloading:CachedImage Source="{Binding}"/>
+            </DataTemplate>
+        </CarouselPage.ItemTemplate>-->
+    </CarouselPage>
   <ContentPage Title="Tab 3" />
 </TabbedPage>
