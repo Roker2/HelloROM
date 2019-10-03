@@ -20,10 +20,16 @@
     <Compile Update="ROMInfPage.xaml.cs">
       <DependentUpon>ROMInfPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="ROMPage.xaml.cs">
+      <DependentUpon>ROMPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="ROMInfPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ROMPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

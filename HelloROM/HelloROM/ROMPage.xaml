@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloROM"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="HelloROM.ROMPage">
+  <!--Pages can be added as references or inline-->
+  <ContentPage Title="ROM Information">
+        <ContentPage.Content>
+            <StackLayout>
+                <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100">
+                    <ffimageloading:CachedImage.Transformations>
+                        <fftransformations:CircleTransformation/>
+                    </ffimageloading:CachedImage.Transformations>
+                </ffimageloading:CachedImage>
+                <Label x:Name="ROMName" FontSize="30"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Site:"/>
+                    <Label x:Name="ROMSite" TextColor="Blue"/>
+                </StackLayout>
+                <Label x:Name="ROMInf"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+  <ContentPage Title="Tab 2" />
+  <ContentPage Title="Tab 3" />
+</TabbedPage>
