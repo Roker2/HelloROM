@@ -20,6 +20,11 @@ namespace HelloROM
                 new ROM("Lineage OS", 9.0, "AOSP", "https://avatars3.githubusercontent.com/u/24304779", "https://lineageos.org"),
                 new ROM("Resurrection Remix", 9.0, "Lineage OS", "https://avatars3.githubusercontent.com/u/4931972", "https://www.resurrectionremix.com")
             };
+            for (int i = 1; i <= 6; i++)
+            {
+                char temp_ch = (char)(i + 48);
+                ROMArray[2].AddScreenshot("https://www.resurrectionremix.com/img/screenshots/screenshot_0" + temp_ch + ".png");
+            }
             ROMs rOMs = new ROMs(ROMArray);
             ROMList.ItemsSource = rOMs;
         }
