@@ -23,6 +23,11 @@ namespace HelloROM
             for (int i = 1; i <= 6; i++)
             {
                 char temp_ch = (char)(i + 48);
+                ROMArray[1].AddScreenshot("https://github.com/Roker2/HelloROMScreenshots/raw/master/Lineage%20OS/" + temp_ch + ".jpg");
+            }
+            for (int i = 1; i <= 6; i++)
+            {
+                char temp_ch = (char)(i + 48);
                 ROMArray[2].AddScreenshot("https://www.resurrectionremix.com/img/screenshots/screenshot_0" + temp_ch + ".png");
             }
             ROMs rOMs = new ROMs(ROMArray);
