@@ -32,12 +32,10 @@ namespace HelloROM
             Name = _Name;
             AndroidVersion = _AndroidVersion;
             Base = _Base;
-            Image = _Image;
-            if (Image == null)
-                Image = "https://github.com/Roker2/HelloROM/raw/master/Images/404.png";
-            SiteUrl = _Site;
-            if (SiteUrl == null)
-                SiteUrl = "None";
+            if (_Image != null)
+                Image = _Image;
+            if (_Site != null)
+                SiteUrl = _Site;
         }
 
         /*public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
