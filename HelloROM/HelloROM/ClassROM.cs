@@ -39,6 +39,16 @@ namespace HelloROM
             Screenshots.Add(URL);
         }
 
+        //с 1 до number добавит снимки экрана
+        public void AddScreenhots (string URLPartOne, int number, string URLPartTwo)
+        {
+            for (int i = 1; i <= number; i++)
+            {
+                char temp_ch = (char)(i + 48);
+                AddScreenshot(URLPartOne + temp_ch + URLPartTwo);
+            }
+        }
+
         /*public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
         {
             Name = _Name;
