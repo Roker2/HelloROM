@@ -14,11 +14,7 @@ namespace HelloROM
         public string Codename = "Pie";//к примеру, у CarbonROM 7.0 (9.0) кодовое имя - OPAL, но оно есть мало у кого
         public string Image { get; set; } = "https://github.com/Roker2/HelloROM/raw/master/Images/404.png";
         public string SiteUrl = "None";
-        public List<String> Screenshots { get; set; } = new List<String>
-        {
-                "https://www.resurrectionremix.com/img/screenshots/screenshot_01.png",
-                "https://www.resurrectionremix.com/img/screenshots/screenshot_02.png"
-        };
+        public List<String> Screenshots { get; set; } = new List<String> { };
         //string[] Features;//набор настроек
         //string[] Devices;//официально поддерживаемые усройства
 
@@ -36,6 +32,11 @@ namespace HelloROM
                 Image = _Image;
             if (_Site != null)
                 SiteUrl = _Site;
+        }
+
+        public void AddScreenshot (string URL)
+        {
+            Screenshots.Add(URL);
         }
 
         /*public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
