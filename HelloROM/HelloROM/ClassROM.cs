@@ -40,7 +40,7 @@ namespace HelloROM
         }
 
         //с 1 до number добавит снимки экрана
-        public void AddScreenhots (string URLPartOne, int number, string URLPartTwo)
+        public void AddScreenshots (string URLPartOne, int number, string URLPartTwo)
         {
             for (int i = 1; i <= number; i++)
             {
