@@ -8,19 +8,21 @@
   <!--Pages can be added as references or inline-->
   <ContentPage Title="ROM Information">
         <ContentPage.Content>
-            <StackLayout>
-                <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100">
-                    <ffimageloading:CachedImage.Transformations>
-                        <fftransformations:CircleTransformation/>
-                    </ffimageloading:CachedImage.Transformations>
-                </ffimageloading:CachedImage>
-                <Label x:Name="ROMName" FontSize="30"/>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Site:"/>
-                    <Label x:Name="ROMSite" TextColor="Blue"/>
+            <ScrollView>
+                <StackLayout>
+                    <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100">
+                        <ffimageloading:CachedImage.Transformations>
+                            <fftransformations:CircleTransformation/>
+                        </ffimageloading:CachedImage.Transformations>
+                    </ffimageloading:CachedImage>
+                    <Label x:Name="ROMName" FontSize="30"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Site:"/>
+                        <Label x:Name="ROMSite" TextColor="Blue"/>
+                    </StackLayout>
+                    <Label x:Name="ROMInf"/>
                 </StackLayout>
-                <Label x:Name="ROMInf"/>
-            </StackLayout>
+            </ScrollView>
         </ContentPage.Content>
     </ContentPage>
     <CarouselPage x:Name="ROMScreensots" Title="Screenshots">
