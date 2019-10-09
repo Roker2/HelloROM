@@ -53,10 +53,10 @@
       <Version>1.1.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading">
-      <Version>2.4.5.880-pre</Version>
+      <Version>2.4.7.938-pre</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
-      <Version>2.4.5.880-pre</Version>
+      <Version>2.4.7.938-pre</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Transformations">
       <Version>2.4.7.938-pre</Version>
