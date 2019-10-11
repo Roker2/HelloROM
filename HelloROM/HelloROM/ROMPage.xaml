@@ -21,6 +21,11 @@
                         <Label x:Name="ROMSite" TextColor="Blue"/>
                     </StackLayout>
                     <Label x:Name="ROMInf"/>
+                    <StackLayout VerticalOptions="EndAndExpand">
+                        <Button x:Name="Button_Github" Text="GitHub" BackgroundColor="White" Clicked="Button_Github_Clicked"/>
+                        <Button x:Name="Button_Site" Text="Site" BackgroundColor="White" Clicked="Button_Site_Clicked"/>
+                        <Button x:Name="Button_Gerrit" Text="Gerrit" BackgroundColor="White" Clicked="Button_Gerrit_Clicked"/>
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
         </ContentPage.Content>

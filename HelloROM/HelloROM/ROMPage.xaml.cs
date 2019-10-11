@@ -32,5 +32,20 @@ namespace HelloROM
             ROMSite.GestureRecognizers.Add(tapOpenURI);
             ROMScreensots.ItemsSource = _rom.Screenshots;
         }
+
+        private void Button_Gerrit_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Site_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri(ROMSite.Text));
+        }
+
+        private void Button_Github_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
