@@ -21,7 +21,7 @@ namespace HelloROM
                 new ROM("Resurrection Remix", 9.0, "Lineage OS", "https://avatars3.githubusercontent.com/u/4931972", "https://www.resurrectionremix.com", null, "https://github.com/ResurrectionRemix")
             };
             ROMArray[0].AddScreenshots("https://github.com/Roker2/HelloROMScreenshots/raw/master/CarbonROM/", 7, ".png");
-            ROMArray[1].AddScreenshots("https://github.com/Roker2/HelloROMScreenshots/raw/master/Lineage%20OS/", 6, ".jpg");
+            ROMArray[1].AddScreenshots("https://github.com/Roker2/HelloROMScreenshots/raw/master/Lineage%20OS/", 6, ".png");
             ROMArray[2].AddScreenshots("https://www.resurrectionremix.com/img/screenshots/screenshot_0", 6, ".png");
             ROMArray[1].Description = "It is the successor to the custom ROM CyanogenMod, from which it was forked in December 2016 when Cyanogen Inc. announced it was discontinuing development and shut down the infrastructure behind the project.\n© Wikipedia";
             ROMs rOMs = new ROMs(ROMArray);
