@@ -35,5 +35,4 @@
             </DataTemplate>
         </CarouselPage.ItemTemplate>
     </CarouselPage>
-  <ContentPage Title="Tab 3" />
 </TabbedPage>
