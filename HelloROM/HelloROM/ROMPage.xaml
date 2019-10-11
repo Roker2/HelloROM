@@ -16,10 +16,6 @@
                         </ffimageloading:CachedImage.Transformations>
                     </ffimageloading:CachedImage>
                     <Label x:Name="ROMName" FontSize="30"/>
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="Site:"/>
-                        <Label x:Name="ROMSite" TextColor="Blue"/>
-                    </StackLayout>
                     <Label x:Name="ROMInf"/>
                     <StackLayout VerticalOptions="EndAndExpand">
                         <Button x:Name="Button_Github" Text="GitHub" BackgroundColor="White" Clicked="Button_Github_Clicked"/>

@@ -12,6 +12,8 @@ namespace HelloROM
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ROMPage : TabbedPage
     {
+        string site;
+
         public ROMPage()
         {
             InitializeComponent();
@@ -23,13 +25,7 @@ namespace HelloROM
             ROMName.Text = _rom.Name;
             ROMInf.Text = _rom.Name + " is based on " + _rom.Base + ".";
             ROMPic.Source = _rom.Image;
-            ROMSite.Text = _rom.SiteUrl;
-            var tapOpenURI = new TapGestureRecognizer();
-            tapOpenURI.Tapped += (s, e) =>
-            {
-                Device.OpenUri(new Uri(ROMSite.Text));
-            };
-            ROMSite.GestureRecognizers.Add(tapOpenURI);
+            site = _rom.SiteUrl;
             ROMScreensots.ItemsSource = _rom.Screenshots;
         }
 
@@ -40,7 +36,7 @@ namespace HelloROM
 
         private void Button_Site_Clicked(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri(ROMSite.Text));
+            Device.OpenUri(new Uri(site));
         }
 
         private void Button_Github_Clicked(object sender, EventArgs e)
