@@ -26,7 +26,7 @@ namespace HelloROM
         {
             InitializeComponent();
             ROMName.Text = _rom.Name;
-            ROMInf.Text = _rom.Name + " is based on " + _rom.Base + ".";
+            ROMInf.Text = _rom.Description + "\n" + "\n" + _rom.Name + " is based on " + _rom.Base + ".";
             ROMPic.Source = _rom.Image;
             site = _rom.SiteUrl;
             GerritUrl = _rom.GerritUrl;
