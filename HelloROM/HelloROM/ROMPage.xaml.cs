@@ -33,23 +33,32 @@ namespace HelloROM
             GithubUrl = _rom.GithubUrl;
             ROMScreensots.ItemsSource = _rom.Screenshots;
 
-            Button Button_Github = new Button();
-            Button_Github.Text = "GitHub";
-            make_button_style(Button_Github);
-            Button_Github.Clicked += Button_Github_Clicked;
-            Buttons.Children.Add(Button_Github);
+            if(GithubUrl != "None")
+            {
+                Button Button_Github = new Button();
+                Button_Github.Text = "GitHub";
+                make_button_style(Button_Github);
+                Button_Github.Clicked += Button_Github_Clicked;
+                Buttons.Children.Add(Button_Github);
+            }
 
-            Button Button_Site = new Button();
-            Button_Site.Text = "Site";
-            make_button_style(Button_Site);
-            Button_Site.Clicked += Button_Site_Clicked;
-            Buttons.Children.Add(Button_Site);
+            if(site != "None")
+            {
+                Button Button_Site = new Button();
+                Button_Site.Text = "Site";
+                make_button_style(Button_Site);
+                Button_Site.Clicked += Button_Site_Clicked;
+                Buttons.Children.Add(Button_Site);
+            }
 
-            Button Button_Gerrit = new Button();
-            Button_Gerrit.Text = "Gerrit";
-            make_button_style(Button_Gerrit);
-            Button_Gerrit.Clicked += Button_Gerrit_Clicked;
-            Buttons.Children.Add(Button_Gerrit);
+            if(GerritUrl != "None")
+            {
+                Button Button_Gerrit = new Button();
+                Button_Gerrit.Text = "Gerrit";
+                make_button_style(Button_Gerrit);
+                Button_Gerrit.Clicked += Button_Gerrit_Clicked;
+                Buttons.Children.Add(Button_Gerrit);
+            }
         }
 
         void make_button_style (Button _button)
