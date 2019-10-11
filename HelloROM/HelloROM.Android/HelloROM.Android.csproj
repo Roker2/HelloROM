@@ -52,6 +52,9 @@
     <PackageReference Include="Styles.Text">
       <Version>1.1.2</Version>
     </PackageReference>
+    <PackageReference Include="Toasts.Forms.Plugin">
+      <Version>3.3.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading">
       <Version>2.4.7.938-pre</Version>
     </PackageReference>
