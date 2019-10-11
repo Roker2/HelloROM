@@ -36,8 +36,8 @@ namespace HelloROM
                 SiteUrl = _Site;
             if (_Gerrit != null)
                 GerritUrl = _Gerrit;
-            if (_Gerrit != null)
-                GithubUrl = _Gerrit;
+            if (_Github != null)
+                GithubUrl = _Github;
         }
 
         public void AddScreenshot (string URL)
