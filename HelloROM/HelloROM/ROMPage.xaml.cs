@@ -33,7 +33,7 @@ namespace HelloROM
             GithubUrl = _rom.GithubUrl;
             ROMScreensots.ItemsSource = _rom.Screenshots;
 
-            if(GithubUrl != "None")
+            if(GithubUrl != null)
             {
                 Button Button_Github = new Button();
                 Button_Github.Text = "GitHub";
@@ -42,7 +42,7 @@ namespace HelloROM
                 Buttons.Children.Add(Button_Github);
             }
 
-            if(site != "None")
+            if(site != null)
             {
                 Button Button_Site = new Button();
                 Button_Site.Text = "Site";
@@ -51,7 +51,7 @@ namespace HelloROM
                 Buttons.Children.Add(Button_Site);
             }
 
-            if(GerritUrl != "None")
+            if(GerritUrl != null)
             {
                 Button Button_Gerrit = new Button();
                 Button_Gerrit.Text = "Gerrit";
