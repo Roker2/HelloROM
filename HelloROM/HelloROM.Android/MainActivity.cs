@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using FFImageLoading.Forms.Platform;
 using Plugin.Toasts;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
 
 namespace HelloROM.Droid
 {
@@ -22,6 +24,7 @@ namespace HelloROM.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             CachedImageRenderer.Init(true);
+            DependencyService.Register<ToastNotification>();
             ToastNotification.Init(this);
             LoadApplication(new App());
         }
