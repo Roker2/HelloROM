@@ -17,7 +17,7 @@
                                 </ffimageloading:CachedImage.Transformations>
                             </ffimageloading:CachedImage>
                             <StackLayout>
-                                <Label Text="{Binding Path = Name}" FontSize="17"/>
+                                <Label Text="{Binding Path = Name}" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
                                 <Label Text="{Binding Path = Base}" FontSize="9"/>
                             </StackLayout>
                         </StackLayout>
