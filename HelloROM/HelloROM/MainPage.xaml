@@ -6,11 +6,11 @@
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              x:Class="HelloROM.MainPage">
     <StackLayout>
-        <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected">
+        <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected" SeparatorVisibility="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Margin="15, 7.5, 0, 7.5">
                             <ffimageloading:CachedImage x:Name="ROMPic" Source="{Binding Path=Image}" WidthRequest="50" HeightRequest="50">
                                 <ffimageloading:CachedImage.Transformations>
                                     <fftransformations:CircleTransformation/>
