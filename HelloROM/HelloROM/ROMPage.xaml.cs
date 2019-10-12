@@ -17,11 +17,6 @@ namespace HelloROM
         string GerritUrl;
         string GithubUrl;
 
-        public ROMPage()
-        {
-            InitializeComponent();
-        }
-
         public ROMPage(ROM _rom)
         {
             InitializeComponent();
