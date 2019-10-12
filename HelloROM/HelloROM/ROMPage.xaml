@@ -15,8 +15,8 @@
                             <fftransformations:CircleTransformation/>
                         </ffimageloading:CachedImage.Transformations>
                     </ffimageloading:CachedImage>
-                    <Label x:Name="ROMName" FontSize="30"/>
-                    <Label x:Name="ROMInf"/>
+                    <Label x:Name="ROMName" FontSize="30" Margin="5, 0, 0, 0"/>
+                    <Label x:Name="ROMInf" Margin="5, 0, 0, 0"/>
                     <StackLayout x:Name="Buttons" VerticalOptions="EndAndExpand">
                         <!--<Button x:Name="Button_Github" Text="GitHub" BackgroundColor="White" Clicked="Button_Github_Clicked"/>
                         <Button x:Name="Button_Site" Text="Site" BackgroundColor="White" Clicked="Button_Site_Clicked"/>
