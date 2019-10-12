@@ -36,8 +36,7 @@ namespace HelloROM
             if(GithubUrl != null)
             {
                 Button Button_Github = new Button();
-                Button_Github.Text = "GitHub";
-                make_button_style(Button_Github);
+                make_button_style(Button_Github, "GitHub");
                 Button_Github.Clicked += Button_Github_Clicked;
                 Buttons.Children.Add(Button_Github);
             }
@@ -45,8 +44,7 @@ namespace HelloROM
             if(site != null)
             {
                 Button Button_Site = new Button();
-                Button_Site.Text = "Site";
-                make_button_style(Button_Site);
+                make_button_style(Button_Site, "Site");
                 Button_Site.Clicked += Button_Site_Clicked;
                 Buttons.Children.Add(Button_Site);
             }
@@ -54,15 +52,15 @@ namespace HelloROM
             if(GerritUrl != null)
             {
                 Button Button_Gerrit = new Button();
-                Button_Gerrit.Text = "Gerrit";
-                make_button_style(Button_Gerrit);
+                make_button_style(Button_Gerrit, "Gerrit");
                 Button_Gerrit.Clicked += Button_Gerrit_Clicked;
                 Buttons.Children.Add(Button_Gerrit);
             }
         }
 
-        void make_button_style (Button _button)
+        void make_button_style (Button _button, string bt_name)
         {
+            _button.Text = bt_name;
             _button.BackgroundColor = Color.White;
         }
 
