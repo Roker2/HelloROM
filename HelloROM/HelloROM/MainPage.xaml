@@ -16,7 +16,7 @@
                                     <fftransformations:CircleTransformation/>
                                 </ffimageloading:CachedImage.Transformations>
                             </ffimageloading:CachedImage>
-                            <StackLayout>
+                            <StackLayout VerticalOptions="Center">
                                 <Label Text="{Binding Path = Name}" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
                                 <Label Text="{Binding Path = Base}" FontSize="9"/>
                             </StackLayout>
