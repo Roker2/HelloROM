@@ -16,5 +16,11 @@ namespace HelloROM
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void Preview_Clicked(object sender, EventArgs e)
+        {
+            ROM PreviewROM = new ROM(ROMName.Text, ROMBase.Text, PicURL.Text, ROMSite.Text, ROMGerrit.Text, ROMGithub.Text);
+            await Navigation.PushAsync(new ROMPage(PreviewROM));
+        }
+    }
 }
