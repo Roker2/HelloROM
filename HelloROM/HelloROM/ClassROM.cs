@@ -44,6 +44,12 @@ namespace HelloROM
             }
         }
 
+        public void AddDescription(string _description = null)
+        {
+            if (_description != null)
+                Description = _description;
+        }
+
         /*public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
         {
             Name = _Name;
