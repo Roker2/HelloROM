@@ -14,8 +14,8 @@
             <Entry x:Name="ScreenshotsNumber" Keyboard="Numeric" TextChanged="ScreenshotsNumber_TextChanged" Text="0" Placeholder="Screenshots Number"/>
             <StackLayout x:Name="Screenshots"/>
             <StackLayout Orientation="Horizontal">
-                <Button x:Name="Preview" Text="Preview" Clicked="Preview_Clicked"/>
-                <Button x:Name="SaveToJSON" Text="Share JSON" Clicked="SaveToJSON_Clicked"/>
+                <Button x:Name="Preview" Text="Preview" Clicked="Preview_Clicked" BackgroundColor="White"/>
+                <Button x:Name="SaveToJSON" Text="Share JSON" Clicked="SaveToJSON_Clicked" BackgroundColor="White"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
