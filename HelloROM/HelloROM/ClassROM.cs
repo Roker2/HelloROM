@@ -23,10 +23,9 @@ namespace HelloROM
 
         }
 
-        public ROM (string _Name, double _AndroidVersion, string _Base, string _Image = null, string _Site = null, string _Gerrit = null, string _Github = null)
+        public ROM (string _Name, string _Base, string _Image = null, string _Site = null, string _Gerrit = null, string _Github = null)
         {
             Name = _Name;
-            AndroidVersion = _AndroidVersion;
             Base = _Base;
             if (_Image != null)
                 Image = _Image;
@@ -61,11 +60,6 @@ namespace HelloROM
         public string GetName()
         {
             return Name;
-        }
-
-        public double GetAndroidVersion ()
-        {
-            return AndroidVersion;
         }
 
         public string GetBase ()
