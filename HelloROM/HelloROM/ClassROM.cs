@@ -18,11 +18,6 @@ namespace HelloROM
         //string[] Features;//набор настроек
         //string[] Devices;//официально поддерживаемые усройства
 
-        public ROM ()
-        {
-
-        }
-
         public ROM (string _Name, string _Base, string _Image = null, string _Site = null, string _Gerrit = null, string _Github = null)
         {
             Name = _Name;
