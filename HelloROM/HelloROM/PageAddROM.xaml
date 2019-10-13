@@ -15,7 +15,7 @@
             <StackLayout x:Name="Screenshots"/>
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="Preview" Text="Preview" Clicked="Preview_Clicked"/>
-                <Button x:Name="SaveToJSON" Text="Save to file" Clicked="SaveToJSON_Clicked"/>
+                <Button x:Name="SaveToJSON" Text="Share JSON" Clicked="SaveToJSON_Clicked"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
