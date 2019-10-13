@@ -4,9 +4,13 @@
              x:Class="HelloROM.PageAddROM">
     <ContentPage.Content>
         <StackLayout>
+            <Entry x:Name="ROMName" Placeholder="Name"/>
+            <Entry x:Name="ROMBase" Placeholder="Base"/>
             <Entry x:Name="PicURL" Placeholder="URL Picture" Keyboard="Url"/>
-            <Entry x:Name="ROMName"/>
-            <Entry x:Name="ROMBase"/>
+            <Entry x:Name="ROMDescription" Placeholder="Description"/>
+            <Entry x:Name="ROMSite" Placeholder="Official site"/>
+            <Entry x:Name="ROMGerrit" Placeholder="Gerrit"/>
+            <Entry x:Name="ROMGithub" Placeholder="Github"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
