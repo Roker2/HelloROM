@@ -11,6 +11,8 @@
             <Entry x:Name="ROMSite" Placeholder="Official site"/>
             <Entry x:Name="ROMGerrit" Placeholder="Gerrit"/>
             <Entry x:Name="ROMGithub" Placeholder="Github"/>
+            <Entry x:Name="ScreenshotsNumber" Keyboard="Numeric" TextChanged="ScreenshotsNumber_TextChanged" Text="0"/>
+            <StackLayout x:Name="Screenshots"/>
             <Button x:Name="Preview" Text="Preview" Clicked="Preview_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
