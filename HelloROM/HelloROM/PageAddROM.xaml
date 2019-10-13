@@ -3,13 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloROM.PageAddROM">
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
-            </Grid.RowDefinitions>
+        <StackLayout>
             <Entry x:Name="PicURL" Placeholder="URL Picture" Keyboard="Url"/>
             <Entry x:Name="ROMName"/>
-            <!--<Entry x:Name="ROMBase"/>-->
-        </Grid>
+            <Entry x:Name="ROMBase"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
