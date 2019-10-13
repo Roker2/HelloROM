@@ -4,8 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Http;
 using Xamarin.Forms;
 using FFImageLoading.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace HelloROM
 {
@@ -25,7 +28,16 @@ namespace HelloROM
             ROMArray[2].AddScreenshots("https://www.resurrectionremix.com/img/screenshots/screenshot_0", 6, ".png");
             ROMArray[1].Description = "It is the successor to the custom ROM CyanogenMod, from which it was forked in December 2016 when Cyanogen Inc. announced it was discontinuing development and shut down the infrastructure behind the project.\n© Wikipedia";
             ROMs rOMs = new ROMs(ROMArray);
-            ROMList.ItemsSource = rOMs;
+            GetStat();
+            //ROMList.ItemsSource = rOMs;
+        }
+
+        private async void GetStat()
+        {
+            HttpClient client = new HttpClient();
+            var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
+            var json = await response.Content.ReadAsStringAsync();
+            ROMList.ItemsSource = JsonConvert.DeserializeObject<List<ROM>>(json);
         }
 
         private async void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
