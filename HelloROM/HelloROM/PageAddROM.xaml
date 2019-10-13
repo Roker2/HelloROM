@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloROM.PageAddROM">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Entry x:Name="PicURL" Placeholder="URL Picture" Keyboard="Url"/>
+            <Entry x:Name="ROMName"/>
+            <!--<Entry x:Name="ROMBase"/>-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
