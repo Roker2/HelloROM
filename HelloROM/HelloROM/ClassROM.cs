@@ -10,10 +10,10 @@ namespace HelloROM
         public string Name { get; set; } = "AOSP";//имя прошивки
         public string Base { get; set; } = "AOSP";//прошивка, на которой базируется прошивка, обычно это Lineage OS/CyanogenMod или AOSP
         public string Image { get; set; } = "https://github.com/Roker2/HelloROM/raw/master/Images/404.png";
-        public string Description = "Description is not exist";
-        public string SiteUrl;
-        public string GerritUrl;
-        public string GithubUrl;
+        public string Description { get; set; } = "Description is not exist";
+        public string SiteUrl { get; set; }
+        public string GerritUrl { get; set; }
+        public string GithubUrl { get; set; }
         public List<String> Screenshots { get; set; } = new List<String> { };
         //string[] Features;//набор настроек
         //string[] Devices;//официально поддерживаемые усройства
