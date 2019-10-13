@@ -5,6 +5,9 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              x:Class="HelloROM.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary" Text="Add ROM" Priority="0" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
     <StackLayout>
         <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected" SeparatorVisibility="None">
             <ListView.ItemTemplate>
