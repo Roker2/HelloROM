@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace HelloROM
 {
@@ -46,6 +47,59 @@ namespace HelloROM
                     Screenshots.Children.Add(entryMass[i]);
                 }
             }
+        }
+
+        public async Task ShareText(string text)
+        {
+            await Share.RequestAsync(new ShareTextRequest
+            {
+                Text = text,
+                Title = "Share JSON"
+            });
+        }
+
+        string ToJSONInf(string Tag, string Info)
+        {
+            return "\"" + Tag + "\":\"" + Info + "\"";
+        }
+
+        bool CheckScreenshots()
+        {
+            for (int i = 0; i < ScreensNumber; i++)
+            {
+                if (entryMass[i].Text == "")
+                    return false;
+            }
+            return true;
+        }
+
+        private void SaveToJSON_Clicked(object sender, EventArgs e)
+        {
+            /*if ((ROMName.Text == "") || (ScreensNumber == 0) || CheckScreenshots())
+            {
+                return;
+            }*/
+            string JSON_str = "{";
+            JSON_str += ToJSONInf("Name", ROMName.Text) + ", " + ToJSONInf("Base", ROMBase.Text) + ", ";
+            if (!string.IsNullOrEmpty(PicURL.Text))
+                JSON_str += ToJSONInf("Image", PicURL.Text) + ", ";
+            if (!string.IsNullOrEmpty(ROMDescription.Text))
+                JSON_str += ToJSONInf("Description", ROMDescription.Text) + ", ";
+            if (!string.IsNullOrEmpty(ROMSite.Text))
+                JSON_str += ToJSONInf("SiteUrl", ROMSite.Text) + ", ";
+            if (!string.IsNullOrEmpty(ROMGerrit.Text))
+                JSON_str += ToJSONInf("GerritUrl", ROMGerrit.Text) + ", ";
+            if (!string.IsNullOrEmpty(ROMGithub.Text))
+                JSON_str += ToJSONInf("GithubUrl", ROMGithub.Text) + ", ";
+            JSON_str += "\"Screenshots\":\n[";
+            for (int i = 0; i < ScreensNumber; i++)
+            {
+                JSON_str += "\"" + entryMass[i].Text + "\"";
+                if (i != ScreensNumber - 1)
+                    JSON_str += ",\n";
+            }
+            JSON_str += "]}";
+            ShareText(JSON_str);
         }
     }
 }
