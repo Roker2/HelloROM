@@ -3,20 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloROM.PageAddROM">
     <ContentPage.Content>
-        <StackLayout>
-            <Entry x:Name="ROMName" Placeholder="Name"/>
-            <Entry x:Name="ROMBase" Placeholder="Base"/>
-            <Entry x:Name="PicURL" Placeholder="URL Picture" Keyboard="Url"/>
-            <Entry x:Name="ROMDescription" Placeholder="Description"/>
-            <Entry x:Name="ROMSite" Placeholder="Official site"/>
-            <Entry x:Name="ROMGerrit" Placeholder="Gerrit"/>
-            <Entry x:Name="ROMGithub" Placeholder="Github"/>
-            <Entry x:Name="ScreenshotsNumber" Keyboard="Numeric" TextChanged="ScreenshotsNumber_TextChanged" Text="0" Placeholder="Screenshots Number"/>
-            <StackLayout x:Name="Screenshots"/>
-            <StackLayout Orientation="Horizontal">
-                <Button x:Name="Preview" Text="Preview" Clicked="Preview_Clicked" BackgroundColor="White"/>
-                <Button x:Name="SaveToJSON" Text="Share JSON" Clicked="SaveToJSON_Clicked" BackgroundColor="White"/>
+        <ScrollView>
+            <StackLayout>
+                <Entry x:Name="ROMName" Placeholder="Name"/>
+                <Entry x:Name="ROMBase" Placeholder="Base"/>
+                <Entry x:Name="PicURL" Placeholder="URL Picture" Keyboard="Url"/>
+                <Entry x:Name="ROMDescription" Placeholder="Description"/>
+                <Entry x:Name="ROMSite" Placeholder="Official site"/>
+                <Entry x:Name="ROMGerrit" Placeholder="Gerrit"/>
+                <Entry x:Name="ROMGithub" Placeholder="Github"/>
+                <Entry x:Name="ScreenshotsNumber" Keyboard="Numeric" TextChanged="ScreenshotsNumber_TextChanged" Text="0" Placeholder="Screenshots Number"/>
+                <StackLayout x:Name="Screenshots"/>
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="Preview" Text="Preview" Clicked="Preview_Clicked" BackgroundColor="White"/>
+                    <Button x:Name="SaveToJSON" Text="Share JSON" Clicked="SaveToJSON_Clicked" BackgroundColor="White"/>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
