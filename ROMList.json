@@ -1,5 +1,5 @@
 [
-{"Name":"CarbonROM", "Base":"AOSP", "Image":"https://github.com/Roker2/HelloROM/raw/master/Images/CarbonROM.png", "SiteUrl":"https://carbonrom.org", "GerritUrl":"https://review.carbonrom.org", "GithubUrl":"https://github.com/CarbonROM", "Screenshots":
+{"Name":"CarbonROM", "Base":"AOSP", "Image":"https://github.com/Roker2/HelloROM/raw/master/Images/CarbonROM.png", "Description":"CarbonROM is an aftermarket firmware based on the Android Open Source Project created with the purpose of adding versatility and customization to stock Android. Stability is our highest priority; our vision is to be the best alternative to a stock operating system for your device." "SiteUrl":"https://carbonrom.org", "GerritUrl":"https://review.carbonrom.org", "GithubUrl":"https://github.com/CarbonROM", "Screenshots":
 ["https://github.com/Roker2/HelloROMScreenshots/raw/master/CarbonROM/1.png",	
 "https://github.com/Roker2/HelloROMScreenshots/raw/master/CarbonROM/2.png",	
 "https://github.com/Roker2/HelloROMScreenshots/raw/master/CarbonROM/3.png",	
