@@ -43,6 +43,7 @@
 {"Name":"Evolution X",
 "Base":"Pixel Experience",
 "Image":"https://avatars3.githubusercontent.com/u/50197624",
+"Description":"Evolution X ROM. Based on PE. With customization from your favorite ROMs.",
 "SiteUrl":"https://evolutionx.ml",
 "GithubUrl":"https://github.com/Evolution-X",
 "Screenshots":
@@ -52,6 +53,7 @@
 {"Name":"Pixel Experience",
 "Base":"AOSP",
 "Image":"https://avatars0.githubusercontent.com/u/38539471",
+"Description":"Pixel Experience is an AOSP based ROM, with Google apps included and all Pixel goodies (launcher, wallpapers, icons, fonts, bootanimation). Our mission is to offer the maximum possible stability and security, along with essential and useful features for the proper functioning of the device.",
 "SiteUrl":"https://download.pixelexperience.org",
 "GithubUrl":"https://github.com/PixelExperience",
 "Screenshots":
