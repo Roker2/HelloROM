@@ -18,6 +18,10 @@ namespace HelloROM
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
             GetStat();
         }
 
