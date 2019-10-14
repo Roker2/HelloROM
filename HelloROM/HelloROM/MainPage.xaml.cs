@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using FFImageLoading.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Plugin.Connectivity;
 
 namespace HelloROM
 {
@@ -22,6 +23,12 @@ namespace HelloROM
 
         private async void GetStat()
         {
+            if(!CrossConnectivity.Current.IsConnected)
+            {
+                await DisplayAlert("Error", "Please enable Internet.", "OK");
+                GetStat();
+                return;
+            }
             HttpClient client = new HttpClient();
             var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
             var json = await response.Content.ReadAsStringAsync();
