@@ -44,6 +44,7 @@ namespace HelloROM
                 for (int i = 0; i < ScreensNumber; i++)
                 {
                     entryMass.Add(new Entry());
+                    entryMass[i].Keyboard = Keyboard.Url;
                     Screenshots.Children.Add(entryMass[i]);
                 }
             }
