@@ -67,7 +67,7 @@ namespace HelloROM
         {
             for (int i = 0; i < ScreensNumber; i++)
             {
-                if (entryMass[i].Text == "")
+                if (string.IsNullOrEmpty(entryMass[i].Text))
                     return false;
             }
             return true;
@@ -75,10 +75,26 @@ namespace HelloROM
 
         private void SaveToJSON_Clicked(object sender, EventArgs e)
         {
-            /*if ((ROMName.Text == "") || (ScreensNumber == 0) || CheckScreenshots())
+            if (string.IsNullOrEmpty(ROMName.Text))
             {
+                DisplayAlert("Error", "You didn't write name.", "OK");
                 return;
-            }*/
+            }
+            if (string.IsNullOrEmpty(ROMBase.Text))
+            {
+                DisplayAlert("Error", "You didn't write base.", "OK");
+                return;
+            }
+            if ((ScreensNumber == 0))
+            {
+                DisplayAlert("Error", "You didn't add screenshots", "OK");
+                return;
+            }
+            if (!CheckScreenshots())
+            {
+                DisplayAlert("Error", "You didn't add one or more screenshots", "OK");
+                return;
+            }
             string JSON_str = "{";
             JSON_str += ToJSONInf("Name", ROMName.Text) + ", " + ToJSONInf("Base", ROMBase.Text) + ", ";
             if (!string.IsNullOrEmpty(PicURL.Text))
