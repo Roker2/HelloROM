@@ -55,6 +55,7 @@
 "Image":"https://avatars0.githubusercontent.com/u/38539471",
 "Description":"Pixel Experience is an AOSP based ROM, with Google apps included and all Pixel goodies (launcher, wallpapers, icons, fonts, bootanimation). Our mission is to offer the maximum possible stability and security, along with essential and useful features for the proper functioning of the device.",
 "SiteUrl":"https://download.pixelexperience.org",
+"GerritUrl":"https://gerrit.pixelexperience.org",
 "GithubUrl":"https://github.com/PixelExperience",
 "Screenshots":
 ["https://dl-xda--developers-com.cdn.ampproject.org/ii/w1000/s/dl.xda-developers.com/direct/4/8/1/9/2/5/6/Screenshot_20190914-003934.jpg",
