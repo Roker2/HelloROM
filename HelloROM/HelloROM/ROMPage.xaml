@@ -10,7 +10,7 @@
         <ContentPage.Content>
             <ScrollView>
                 <StackLayout>
-                    <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100">
+                    <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100" Margin="0, 20, 0, 0">
                         <ffimageloading:CachedImage.Transformations>
                             <fftransformations:CircleTransformation/>
                         </ffimageloading:CachedImage.Transformations>
