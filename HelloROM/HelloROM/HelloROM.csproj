@@ -24,6 +24,11 @@
     <Compile Update="MasterDetailPage1MenuItem.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Translations\Translation.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Translation.resx</DependentUpon>
+    </Compile>
     <Compile Update="ROMPage.xaml.cs">
       <DependentUpon>ROMPage.xaml</DependentUpon>
     </Compile>
@@ -35,6 +40,10 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Page1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Translation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translation.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="ROMPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
