@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using HelloROM.Translations;
+
 namespace HelloROM
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]

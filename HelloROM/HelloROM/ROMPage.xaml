@@ -4,9 +4,10 @@
              xmlns:local="clr-namespace:HelloROM"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-             x:Class="HelloROM.ROMPage">
+             x:Class="HelloROM.ROMPage"
+             xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM">
   <!--Pages can be added as references or inline-->
-  <ContentPage Title="ROM Information">
+    <ContentPage Title="{i18n:Translate ROMInformation}">
         <ContentPage.Content>
             <ScrollView>
                 <StackLayout>
