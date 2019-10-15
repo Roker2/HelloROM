@@ -27,7 +27,7 @@
             </ScrollView>
         </ContentPage.Content>
     </ContentPage>
-    <CarouselPage x:Name="ROMScreensots" Title="Screenshots">
+    <CarouselPage x:Name="ROMScreensots" Title="{i18n:Translate Screenshots}">
         <CarouselPage.ItemTemplate>
             <DataTemplate>
                 <ContentPage>

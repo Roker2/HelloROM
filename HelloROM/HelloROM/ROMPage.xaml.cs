@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using HelloROM.Translations;
-
 namespace HelloROM
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -22,7 +20,7 @@ namespace HelloROM
         {
             InitializeComponent();
             ROMName.Text = _rom.Name;
-            ROMInf.Text = _rom.Description + "\n" + "\n" + _rom.Name + " is based on " + _rom.Base + ".";
+            ROMInf.Text = _rom.Description + "\n" + "\n" + _rom.Name + " " + Translations.Translation.BasedOn + " " + _rom.Base + ".";
             ROMPic.Source = _rom.Image;
             site = _rom.SiteUrl;
             GerritUrl = _rom.GerritUrl;
@@ -40,7 +38,7 @@ namespace HelloROM
             if(site != null)
             {
                 Button Button_Site = new Button();
-                make_button_style(Button_Site, "Site");
+                make_button_style(Button_Site, Translations.Translation.Site);
                 Button_Site.Clicked += Button_Site_Clicked;
                 Buttons.Children.Add(Button_Site);
             }
