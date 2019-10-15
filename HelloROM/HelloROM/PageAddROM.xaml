@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Entry x:Name="ROMName" Placeholder="Name"/>
+                <Entry x:Name="ROMName" Placeholder="Name" Margin="0, 10, 0, 0"/>
                 <Entry x:Name="ROMBase" Placeholder="Base"/>
                 <Entry x:Name="PicURL" Placeholder="URL Picture" Keyboard="Url"/>
                 <Entry x:Name="ROMDescription" Placeholder="Description"/>
