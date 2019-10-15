@@ -39,7 +39,7 @@ namespace HelloROM.Translations {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HelloROM.Translations.Translation", typeof(Translation).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HelloROM.Translation", typeof(Translation).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,78 @@ namespace HelloROM.Translations {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на is based on.
+        /// </summary>
+        internal static string BasedOn {
+            get {
+                return ResourceManager.GetString("BasedOn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Description.
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Official site.
+        /// </summary>
+        internal static string Officialsite {
+            get {
+                return ResourceManager.GetString("Officialsite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Preview.
+        /// </summary>
+        internal static string Preview {
+            get {
+                return ResourceManager.GetString("Preview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ROM Information.
+        /// </summary>
+        internal static string ROMInformation {
+            get {
+                return ResourceManager.GetString("ROMInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Screenshots.
+        /// </summary>
+        internal static string Screenshots {
+            get {
+                return ResourceManager.GetString("Screenshots", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Share JSON.
+        /// </summary>
+        internal static string ShareJSON {
+            get {
+                return ResourceManager.GetString("ShareJSON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Site.
+        /// </summary>
+        internal static string Site {
+            get {
+                return ResourceManager.GetString("Site", resourceCulture);
             }
         }
     }
