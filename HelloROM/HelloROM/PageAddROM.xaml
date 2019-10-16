@@ -1,22 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HelloROM.PageAddROM">
+             x:Class="HelloROM.PageAddROM"
+             xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Entry x:Name="ROMName" Placeholder="Name" Margin="0, 10, 0, 0"/>
-                <Entry x:Name="ROMBase" Placeholder="Base"/>
-                <Entry x:Name="PicURL" Placeholder="URL Picture" Keyboard="Url"/>
-                <Entry x:Name="ROMDescription" Placeholder="Description"/>
-                <Entry x:Name="ROMSite" Placeholder="Official site" Keyboard="Url"/>
+                <Entry x:Name="ROMName" Placeholder="{i18n:Translate Name}" Margin="0, 10, 0, 0"/>
+                <Entry x:Name="ROMBase" Placeholder="{i18n:Translate Base}"/>
+                <Entry x:Name="PicURL" Placeholder="{i18n:Translate URLPicture}" Keyboard="Url"/>
+                <Entry x:Name="ROMDescription" Placeholder="{i18n:Translate Description}"/>
+                <Entry x:Name="ROMSite" Placeholder="{i18n:Translate Officialsite}" Keyboard="Url"/>
                 <Entry x:Name="ROMGerrit" Placeholder="Gerrit" Keyboard="Url"/>
                 <Entry x:Name="ROMGithub" Placeholder="Github" Keyboard="Url"/>
-                <Entry x:Name="ScreenshotsNumber" Keyboard="Numeric" TextChanged="ScreenshotsNumber_TextChanged" Text="0" Placeholder="Screenshots Number"/>
+                <Entry x:Name="ScreenshotsNumber" Keyboard="Numeric" TextChanged="ScreenshotsNumber_TextChanged" Text="0" Placeholder="{i18n:Translate ScreenshotsNumber}"/>
                 <StackLayout x:Name="Screenshots"/>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Button x:Name="Preview" Text="Preview" Clicked="Preview_Clicked" BackgroundColor="White"/>
-                    <Button x:Name="SaveToJSON" Text="Share JSON" Clicked="SaveToJSON_Clicked" BackgroundColor="White"/>
+                    <Button x:Name="Preview" Text="{i18n:Translate Preview}" Clicked="Preview_Clicked" BackgroundColor="White"/>
+                    <Button x:Name="SaveToJSON" Text="{i18n:Translate ShareJSON}" Clicked="SaveToJSON_Clicked" BackgroundColor="White"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

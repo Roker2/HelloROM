@@ -55,7 +55,7 @@ namespace HelloROM
             await Share.RequestAsync(new ShareTextRequest
             {
                 Text = text,
-                Title = "Share JSON"
+                Title = Translations.Translation.ShareJSON
             });
         }
 
@@ -78,22 +78,22 @@ namespace HelloROM
         {
             if (string.IsNullOrEmpty(ROMName.Text))
             {
-                DisplayAlert("Error", "You didn't write name.", "OK");
+                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoName, "OK");
                 return;
             }
             if (string.IsNullOrEmpty(ROMBase.Text))
             {
-                DisplayAlert("Error", "You didn't write base.", "OK");
+                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoBase, "OK");
                 return;
             }
             if ((ScreensNumber == 0))
             {
-                DisplayAlert("Error", "You didn't add screenshots", "OK");
+                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoScreenshots, "OK");
                 return;
             }
             if (!CheckScreenshots())
             {
-                DisplayAlert("Error", "You didn't add one or more screenshots", "OK");
+                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoOneOrMoreScreenshots, "OK");
                 return;
             }
             string JSON_str = "{";
