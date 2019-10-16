@@ -160,15 +160,6 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Site.
-        /// </summary>
-        internal static string Site {
-            get {
-                return ResourceManager.GetString("Site", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на URL Picture.
         /// </summary>
         internal static string URLPicture {
