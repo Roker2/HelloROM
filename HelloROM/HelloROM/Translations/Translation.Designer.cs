@@ -61,6 +61,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Base.
+        /// </summary>
+        internal static string Base {
+            get {
+                return ResourceManager.GetString("Base", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на is based on.
         /// </summary>
         internal static string BasedOn {
@@ -75,6 +84,60 @@ namespace HelloROM.Translations {
         internal static string Description {
             get {
                 return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Error.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You didn&apos;t write base..
+        /// </summary>
+        internal static string ErrorNoBase {
+            get {
+                return ResourceManager.GetString("ErrorNoBase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You didn&apos;t write name..
+        /// </summary>
+        internal static string ErrorNoName {
+            get {
+                return ResourceManager.GetString("ErrorNoName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You didn&apos;t add one or more screenshots..
+        /// </summary>
+        internal static string ErrorNoOneOrMoreScreenshots {
+            get {
+                return ResourceManager.GetString("ErrorNoOneOrMoreScreenshots", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You didn&apos;t add screenshots..
+        /// </summary>
+        internal static string ErrorNoScreenshots {
+            get {
+                return ResourceManager.GetString("ErrorNoScreenshots", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
             }
         }
         
@@ -115,6 +178,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Screenshots Number.
+        /// </summary>
+        internal static string ScreenshotsNumber {
+            get {
+                return ResourceManager.GetString("ScreenshotsNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Share JSON.
         /// </summary>
         internal static string ShareJSON {
@@ -129,6 +201,15 @@ namespace HelloROM.Translations {
         internal static string Site {
             get {
                 return ResourceManager.GetString("Site", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на URL Picture.
+        /// </summary>
+        internal static string URLPicture {
+            get {
+                return ResourceManager.GetString("URLPicture", resourceCulture);
             }
         }
     }
