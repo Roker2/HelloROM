@@ -78,22 +78,22 @@ namespace HelloROM
         {
             if (string.IsNullOrEmpty(ROMName.Text))
             {
-                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoName, "OK");
+                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoName, "OK");
                 return;
             }
             if (string.IsNullOrEmpty(ROMBase.Text))
             {
-                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoBase, "OK");
+                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoBase, "OK");
                 return;
             }
             if ((ScreensNumber == 0))
             {
-                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoScreenshots, "OK");
+                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoScreenshots, "OK");
                 return;
             }
             if (!CheckScreenshots())
             {
-                DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoOneOrMoreScreenshots, "OK");
+                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoOneOrMoreScreenshots, "OK");
                 return;
             }
             string JSON_str = "{";

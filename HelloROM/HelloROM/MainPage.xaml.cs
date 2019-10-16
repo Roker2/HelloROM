@@ -29,7 +29,7 @@ namespace HelloROM
         {
             if(!CrossConnectivity.Current.IsConnected)
             {
-                await DisplayAlert(Translations.Translation.Error, Translations.Translation.ErrorNoInternet, "OK");
+                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
                 GetStat();
                 return;
             }

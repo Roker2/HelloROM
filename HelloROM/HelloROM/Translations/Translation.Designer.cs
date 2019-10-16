@@ -97,60 +97,6 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Error.
-        /// </summary>
-        internal static string Error {
-            get {
-                return ResourceManager.GetString("Error", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на You didn&apos;t write base..
-        /// </summary>
-        internal static string ErrorNoBase {
-            get {
-                return ResourceManager.GetString("ErrorNoBase", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Please enable Internet..
-        /// </summary>
-        internal static string ErrorNoInternet {
-            get {
-                return ResourceManager.GetString("ErrorNoInternet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на You didn&apos;t write name..
-        /// </summary>
-        internal static string ErrorNoName {
-            get {
-                return ResourceManager.GetString("ErrorNoName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на You didn&apos;t add one or more screenshots..
-        /// </summary>
-        internal static string ErrorNoOneOrMoreScreenshots {
-            get {
-                return ResourceManager.GetString("ErrorNoOneOrMoreScreenshots", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на You didn&apos;t add screenshots..
-        /// </summary>
-        internal static string ErrorNoScreenshots {
-            get {
-                return ResourceManager.GetString("ErrorNoScreenshots", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Name.
         /// </summary>
         internal static string Name {
