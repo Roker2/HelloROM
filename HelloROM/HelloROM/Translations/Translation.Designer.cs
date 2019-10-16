@@ -61,6 +61,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Add ROM.
+        /// </summary>
+        internal static string AddROM {
+            get {
+                return ResourceManager.GetString("AddROM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Base.
         /// </summary>
         internal static string Base {
@@ -102,6 +111,15 @@ namespace HelloROM.Translations {
         internal static string ErrorNoBase {
             get {
                 return ResourceManager.GetString("ErrorNoBase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Please enable Internet..
+        /// </summary>
+        internal static string ErrorNoInternet {
+            get {
+                return ResourceManager.GetString("ErrorNoInternet", resourceCulture);
             }
         }
         
