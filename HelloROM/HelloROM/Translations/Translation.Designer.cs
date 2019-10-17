@@ -151,7 +151,7 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Share JSON.
+        ///   Ищет локализованную строку, похожую на Send JSON.
         /// </summary>
         internal static string ShareJSON {
             get {

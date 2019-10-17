@@ -150,7 +150,7 @@
     <value>Screenshots Number</value>
   </data>
   <data name="ShareJSON" xml:space="preserve">
-    <value>Share JSON</value>
+    <value>Send JSON</value>
   </data>
   <data name="URLPicture" xml:space="preserve">
     <value>URL Picture</value>

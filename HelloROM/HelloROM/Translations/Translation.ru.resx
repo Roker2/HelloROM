@@ -138,7 +138,7 @@
     <value>Официальный сайт</value>
   </data>
   <data name="Preview" xml:space="preserve">
-    <value>Предварительный просмотр</value>
+    <value>Предпросмотр</value>
   </data>
   <data name="ROMInformation" xml:space="preserve">
     <value>Информация о ROM</value>
@@ -150,7 +150,7 @@
     <value>Количество снимков экрана</value>
   </data>
   <data name="ShareJSON" xml:space="preserve">
-    <value>Поделиться JSON</value>
+    <value>Отправить JSON</value>
   </data>
   <data name="URLPicture" xml:space="preserve">
     <value>Ссылка на изображение</value>
