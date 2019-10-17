@@ -72,5 +72,19 @@
 ["https://arrowos.net/img/ss1.png",
 "https://arrowos.net/img/ss2.png",
 "https://arrowos.net/img/ss3.png",
-"https://arrowos.net/img/ss4.png"]}
+"https://arrowos.net/img/ss4.png"]},
+{"Name":"Revenge OS",
+"Base":"AOSP",
+"Image":"https://avatars3.githubusercontent.com/u/39199926",
+"Description":"A beautiful custom ROM based on CAF and designed to be stable, fast and easy to use.",
+"SiteUrl":"http://revengeos.com",
+"GithubUrl":"https://github.com/RevengeOS",
+"Screenshots":
+["https://i.imgur.com/mcuOgg5.jpg",
+"https://i.imgur.com/mE8oqOw.jpg",
+"https://i.imgur.com/BJkp9FL.jpg",
+"https://i.imgur.com/4vvEvrU.jpg",
+"https://i.imgur.com/e879zBI.jpg",
+"https://i.imgur.com/OYa8Nfa.jpg",
+"https://i.imgur.com/Ra66DWJ.jpg"]}
 ]
