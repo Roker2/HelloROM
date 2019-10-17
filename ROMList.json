@@ -61,5 +61,16 @@
 ["https://dl-xda--developers-com.cdn.ampproject.org/ii/w1000/s/dl.xda-developers.com/direct/4/8/1/9/2/5/6/Screenshot_20190914-003934.jpg",
 "https://dl-xda--developers-com.cdn.ampproject.org/ii/w1000/s/dl.xda-developers.com/direct/4/8/1/9/2/5/5/Screenshot_20190914-003923.jpg",
 "https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/1/9/2/5/9/Screenshot_20190914-003902.png",
-"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/1/9/2/5/7/Screenshot_20190914-003912.png"]}
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/1/9/2/5/7/Screenshot_20190914-003912.png"]},
+{"Name":"Arrow OS",
+"Base":"AOSP",
+"Image":"https://avatars1.githubusercontent.com/u/40351870",
+"Description":"ArrowOS is an AOSP based project started with the aim of keeping things simple, clean and neat. We added just the right and mostly used stuff that will be actually USEFUL at the end of the day, aiming to deliver smooth performance with better battery life.",
+"SiteUrl":"https://arrowos.net",
+"GithubUrl":"https://github.com/ArrowOS",
+"Screenshots":
+["https://arrowos.net/img/ss1.png",
+"https://arrowos.net/img/ss2.png",
+"https://arrowos.net/img/ss3.png",
+"https://arrowos.net/img/ss4.png"]}
 ]
