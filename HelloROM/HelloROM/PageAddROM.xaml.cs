@@ -97,17 +97,17 @@ namespace HelloROM
                 return;
             }
             string JSON_str = "{";
-            JSON_str += ToJSONInf("Name", ROMName.Text) + ", " + ToJSONInf("Base", ROMBase.Text) + ", ";
+            JSON_str += ToJSONInf("Name", ROMName.Text) + ",\n" + ToJSONInf("Base", ROMBase.Text) + ",\n";
             if (!string.IsNullOrEmpty(PicURL.Text))
-                JSON_str += ToJSONInf("Image", PicURL.Text) + ", ";
+                JSON_str += ToJSONInf("Image", PicURL.Text) + ",\n";
             if (!string.IsNullOrEmpty(ROMDescription.Text))
-                JSON_str += ToJSONInf("Description", ROMDescription.Text) + ", ";
+                JSON_str += ToJSONInf("Description", ROMDescription.Text) + ",\n";
             if (!string.IsNullOrEmpty(ROMSite.Text))
-                JSON_str += ToJSONInf("SiteUrl", ROMSite.Text) + ", ";
+                JSON_str += ToJSONInf("SiteUrl", ROMSite.Text) + ",\n";
             if (!string.IsNullOrEmpty(ROMGerrit.Text))
-                JSON_str += ToJSONInf("GerritUrl", ROMGerrit.Text) + ", ";
+                JSON_str += ToJSONInf("GerritUrl", ROMGerrit.Text) + ",\n";
             if (!string.IsNullOrEmpty(ROMGithub.Text))
-                JSON_str += ToJSONInf("GithubUrl", ROMGithub.Text) + ", ";
+                JSON_str += ToJSONInf("GithubUrl", ROMGithub.Text) + ",\n";
             JSON_str += "\"Screenshots\":\n[";
             for (int i = 0; i < ScreensNumber; i++)
             {
