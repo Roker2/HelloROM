@@ -54,5 +54,11 @@ namespace HelloROM
         {
             await Navigation.PushAsync(new PageAddROM());
         }
+
+        private void ROMList_Refreshing(object sender, EventArgs e)
+        {
+            GetStat();
+            ROMList.EndRefresh();
+        }
     }
 }
