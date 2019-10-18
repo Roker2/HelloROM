@@ -43,7 +43,8 @@ namespace HelloROM
                 var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
                 json = await response.Content.ReadAsStringAsync();
             }
-            ROMList.ItemsSource = JsonConvert.DeserializeObject<List<ROM>>((string)json);
+            List<ROM> temp = JsonConvert.DeserializeObject<List<ROM>>((string)json);
+            ROMList.ItemsSource = temp.OrderBy(x => x.Name);
             App.Current.Properties["json"] = (string)json;
         }
 
@@ -58,7 +59,8 @@ namespace HelloROM
                 HttpClient client = new HttpClient();
                 var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
                 string json = await response.Content.ReadAsStringAsync();
-                ROMList.ItemsSource = JsonConvert.DeserializeObject<List<ROM>>(json);
+                List<ROM> temp = JsonConvert.DeserializeObject<List<ROM>>((string)json);
+                ROMList.ItemsSource = temp.OrderBy(x => x.Name);
             }
         }
 
