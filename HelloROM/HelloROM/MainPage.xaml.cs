@@ -47,6 +47,21 @@ namespace HelloROM
             App.Current.Properties["json"] = (string)json;
         }
 
+        private async void UpdateStat()
+        {
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
+            }
+            else
+            {
+                HttpClient client = new HttpClient();
+                var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
+                string json = await response.Content.ReadAsStringAsync();
+                ROMList.ItemsSource = JsonConvert.DeserializeObject<List<ROM>>(json);
+            }
+        }
+
         private async void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             ROM rOM = e.Item as ROM;
@@ -65,7 +80,7 @@ namespace HelloROM
 
         private void ROMList_Refreshing(object sender, EventArgs e)
         {
-            GetStat();
+            UpdateStat();
             ROMList.EndRefresh();
         }
     }
