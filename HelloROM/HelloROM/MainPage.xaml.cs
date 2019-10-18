@@ -90,5 +90,19 @@ namespace HelloROM
             UpdateStat();
             ROMList.EndRefresh();
         }
+
+        private async void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            SearchBar searchBar = (SearchBar)sender;
+            object json = "";
+            if (!App.Current.Properties.TryGetValue("json", out json))
+            {
+                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
+                return;
+            }
+            ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
+            temp.SortByName();
+            ROMList.ItemsSource = temp.Where(x => x.Name.ToLowerInvariant().StartsWith(e.NewTextValue.ToLowerInvariant()));
+        }
     }
 }

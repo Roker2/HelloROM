@@ -10,6 +10,7 @@
         <ToolbarItem Order="Primary" Text="{i18n:Translate AddROM}" Priority="0" Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout>
+        <SearchBar TextChanged="SearchBar_TextChanged"/>
         <ListView x:Name="ROMList" HasUnevenRows="True" ItemTapped="ROMList_ItemTapped" ItemSelected="ROMList_ItemSelected" SeparatorVisibility="None" IsPullToRefreshEnabled="True" Refreshing="ROMList_Refreshing">
             <ListView.ItemTemplate>
                 <DataTemplate>
