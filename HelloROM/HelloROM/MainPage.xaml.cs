@@ -27,7 +27,7 @@ namespace HelloROM
 
         private void SetItemsSource(string json)
         {
-            List<ROM> temp = JsonConvert.DeserializeObject<List<ROM>>((string)json);
+            ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
             ROMList.ItemsSource = temp.OrderBy(x => x.Name);
         }
 
