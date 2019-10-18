@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace HelloROM
 {
@@ -76,6 +77,16 @@ namespace HelloROM
         public ROMs(List<ROM> pArray)
         {
             _roms = pArray;
+        }
+
+        public void SortByName()
+        {
+            _roms = _roms.OrderBy(x => x.Name).ToList<ROM>();
+        }
+
+        public void SortByBase()
+        {
+            _roms = _roms.OrderBy(x => x.Base).ToList<ROM>();
         }
 
         public IEnumerator<ROM> GetEnumerator()
