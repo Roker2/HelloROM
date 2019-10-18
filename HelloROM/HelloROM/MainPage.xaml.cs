@@ -27,16 +27,24 @@ namespace HelloROM
 
         private async void GetStat()
         {
+            object json = "";
             if(!CrossConnectivity.Current.IsConnected)
             {
-                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
-                GetStat();
-                return;
+                if (!App.Current.Properties.TryGetValue("json", out json))
+                {
+                    await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
+                    GetStat();
+                    return;
+                }
             }
-            HttpClient client = new HttpClient();
-            var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
-            string json = await response.Content.ReadAsStringAsync();
-            ROMList.ItemsSource = JsonConvert.DeserializeObject<List<ROM>>(json);
+            else
+            {
+                HttpClient client = new HttpClient();
+                var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
+                json = await response.Content.ReadAsStringAsync();
+            }
+            ROMList.ItemsSource = JsonConvert.DeserializeObject<List<ROM>>((string)json);
+            App.Current.Properties["json"] = (string)json;
         }
 
         private async void ROMList_ItemTapped(object sender, ItemTappedEventArgs e)
