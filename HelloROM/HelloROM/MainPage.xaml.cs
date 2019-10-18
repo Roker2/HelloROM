@@ -35,7 +35,7 @@ namespace HelloROM
             }
             HttpClient client = new HttpClient();
             var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
-            var json = await response.Content.ReadAsStringAsync();
+            string json = await response.Content.ReadAsStringAsync();
             ROMList.ItemsSource = JsonConvert.DeserializeObject<List<ROM>>(json);
         }
 
