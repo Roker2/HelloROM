@@ -149,6 +149,9 @@
   <data name="ScreenshotsNumber" xml:space="preserve">
     <value>Количество снимков экрана</value>
   </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
   <data name="ShareJSON" xml:space="preserve">
     <value>Отправить JSON</value>
   </data>

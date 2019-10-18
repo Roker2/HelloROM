@@ -151,6 +151,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Search.
+        /// </summary>
+        internal static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Send JSON.
         /// </summary>
         internal static string ShareJSON {
