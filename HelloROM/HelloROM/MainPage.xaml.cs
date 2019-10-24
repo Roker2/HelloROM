@@ -10,6 +10,7 @@ using FFImageLoading.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
 
 namespace HelloROM
 {
@@ -36,8 +37,20 @@ namespace HelloROM
         private async void GetStat()
         {
             object json = "";
-            object UseMobileInternet;
-            if (!CrossConnectivity.Current.IsConnected)
+            object UseMobileConnection;
+            if (!App.Current.Properties.TryGetValue("UseMobileConnection", out UseMobileConnection))
+            {
+                UseMobileConnection = true;
+            }
+            if (CrossConnectivity.Current.IsConnected == true)
+            {
+                Console.WriteLine("Type connection: " + CrossConnectivity.Current.ConnectionTypes.FirstOrDefault().ToString());
+                if (CrossConnectivity.Current.ConnectionTypes.FirstOrDefault().ToString() != "Cellular")
+                {
+                    UseMobileConnection = true;
+                }
+            }
+            if (!CrossConnectivity.Current.IsConnected || !(bool)UseMobileConnection)
             {
                 if (!App.Current.Properties.TryGetValue("json", out json))
                 {
