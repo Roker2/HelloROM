@@ -23,6 +23,7 @@ namespace HelloROM
         protected override void OnAppearing()
         {
             GetStat();
+            base.OnAppearing();
         }
 
         private void SetItemsSource(string json)
