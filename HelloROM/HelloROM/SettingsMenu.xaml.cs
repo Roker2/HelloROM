@@ -16,5 +16,10 @@ namespace HelloROM
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void UseMobileInternet_OnChanged(object sender, ToggledEventArgs e)
+        {
+            App.Current.Properties["UseMobileConnection"] = e.Value;
+        }
+    }
 }

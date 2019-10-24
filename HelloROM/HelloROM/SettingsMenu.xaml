@@ -3,7 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloROM.SettingsMenu">
     <ContentPage.Content>
-        <StackLayout>
-        </StackLayout>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <SwitchCell x:Name="UseMobileConnection" Text="Update catalog with mobile connection" On="True" OnChanged="UseMobileInternet_OnChanged"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
     </ContentPage.Content>
 </ContentPage>
