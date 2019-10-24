@@ -35,7 +35,8 @@ namespace HelloROM
         private async void GetStat()
         {
             object json = "";
-            if(!CrossConnectivity.Current.IsConnected)
+            object UseMobileInternet;
+            if (!CrossConnectivity.Current.IsConnected)
             {
                 if (!App.Current.Properties.TryGetValue("json", out json))
                 {
@@ -103,6 +104,11 @@ namespace HelloROM
             ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
             temp.SortByName();
             ROMList.ItemsSource = temp.Where(x => x.Name.ToLowerInvariant().StartsWith(e.NewTextValue.ToLowerInvariant()));
+        }
+
+        private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SettingsMenu());
         }
     }
 }
