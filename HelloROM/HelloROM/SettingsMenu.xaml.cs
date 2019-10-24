@@ -17,6 +17,17 @@ namespace HelloROM
 			InitializeComponent ();
 		}
 
+        protected override void OnAppearing()
+        {
+            object objUseMobileConnection;
+            if (!App.Current.Properties.TryGetValue("UseMobileConnection", out objUseMobileConnection))
+            {
+                objUseMobileConnection = true;
+            }
+            UseMobileConnection.On = (bool)objUseMobileConnection;
+            base.OnAppearing();
+        }
+
         private void UseMobileInternet_OnChanged(object sender, ToggledEventArgs e)
         {
             App.Current.Properties["UseMobileConnection"] = e.Value;
