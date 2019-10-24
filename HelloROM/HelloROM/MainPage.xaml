@@ -7,7 +7,7 @@
              x:Class="HelloROM.MainPage"
              xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Order="Primary" Text="{i18n:Translate AddROM}" Priority="0" Clicked="ToolbarItem_Clicked"/>
+        <ToolbarItem Order="Secondary" Text="{i18n:Translate AddROM}" Priority="0" Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout>
         <SearchBar Placeholder="{i18n:Translate Search}" TextChanged="SearchBar_TextChanged"/>
