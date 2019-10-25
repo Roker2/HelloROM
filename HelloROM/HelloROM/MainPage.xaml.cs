@@ -31,6 +31,13 @@ namespace HelloROM
         {
             ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
             temp.SortByName();
+            object objSortType;
+            if (!App.Current.Properties.TryGetValue("SortType", out objSortType))
+            {
+                objSortType = SortTypes.Name;
+            }
+            if ((SortTypes)objSortType == SortTypes.Base)
+                temp.SortByBase();
             ROMList.ItemsSource = temp;
         }
 
@@ -123,6 +130,22 @@ namespace HelloROM
         private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SettingsMenu());
+            object json;
+            if (!App.Current.Properties.TryGetValue("json", out json))
+            {
+                await DisplayAlert("Error", "json doesn't exist", "OK");
+                return;
+            }
+            ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
+            temp.SortByName();
+            object objSortType;
+            if (!App.Current.Properties.TryGetValue("SortType", out objSortType))
+            {
+                objSortType = SortTypes.Name;
+            }
+            if ((SortTypes)objSortType == SortTypes.Base)
+                temp.SortByBase();
+            ROMList.ItemsSource = temp;
         }
     }
 }

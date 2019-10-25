@@ -8,6 +8,9 @@
             <TableRoot>
                 <TableSection>
                     <SwitchCell x:Name="UseMobileConnection" Text="Update catalog with mobile connection" On="True" OnChanged="UseMobileInternet_OnChanged"/>
+                    <ViewCell>
+                        <Button x:Name="SortTypeButton" BorderWidth="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="StartAndExpand" Clicked="SortTypeButton_Clicked"/>
+                    </ViewCell>
                 </TableSection>
             </TableRoot>
         </TableView>
