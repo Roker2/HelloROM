@@ -6836,8 +6836,11 @@ namespace HelloROM.Droid
 			// aapt resource value: 0x7f090191
 			public const int MainTheme_Base = 2131296657;
 			
+			// aapt resource value: 0x7f090194
+			public const int MyTheme_Splash = 2131296660;
+			
 			// aapt resource value: 0x7f090193
-			public const int MyTheme_Splash = 2131296659;
+			public const int NoUppercaseTextAppearance_Material_Button = 2131296659;
 			
 			// aapt resource value: 0x7f09002e
 			public const int Platform_AppCompat = 2131296302;

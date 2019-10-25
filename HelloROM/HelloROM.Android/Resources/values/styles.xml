@@ -24,10 +24,17 @@
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
 
     <item name="android:windowBackground">@color/launcher_background</item>
+    
+    <item name="android:textAppearanceButton">@style/NoUppercaseTextAppearance.Material.Button</item>
   </style>
 
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#FF4081</item>
+  </style>
+
+  <style name="NoUppercaseTextAppearance.Material.Button" parent="@android:style/TextAppearance.Material.Button">
+    <item name="textAllCaps">false</item>
+    <item name="android:textAllCaps">false</item>
   </style>
 
   <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
