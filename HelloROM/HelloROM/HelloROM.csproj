@@ -18,6 +18,7 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.7.938-pre" />
     <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.7.938-pre" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.848062" />
+    <PackageReference Include="Xamarin.Plugin.FilePicker" Version="2.1.34" />
   </ItemGroup>
 
   <ItemGroup>
