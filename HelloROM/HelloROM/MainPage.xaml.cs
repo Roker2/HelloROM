@@ -27,9 +27,8 @@ namespace HelloROM
             base.OnAppearing();
         }
 
-        private void SetItemsSource(string json)
+        private void Sorting(ROMs temp)
         {
-            ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
             temp.SortByName();
             object objSortType;
             if (!App.Current.Properties.TryGetValue("SortType", out objSortType))
@@ -39,6 +38,12 @@ namespace HelloROM
             if ((SortTypes)objSortType == SortTypes.Base)
                 temp.SortByBase();
             ROMList.ItemsSource = temp;
+        }
+
+        private void SetItemsSource(string json)
+        {
+            ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
+            Sorting(temp);
         }
 
         private async void GetStat()
@@ -143,15 +148,7 @@ namespace HelloROM
                 return;
             }
             ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
-            temp.SortByName();
-            object objSortType;
-            if (!App.Current.Properties.TryGetValue("SortType", out objSortType))
-            {
-                objSortType = SortTypes.Name;
-            }
-            if ((SortTypes)objSortType == SortTypes.Base)
-                temp.SortByBase();
-            ROMList.ItemsSource = temp;
+            Sorting(temp);
         }
     }
 }
