@@ -145,7 +145,7 @@ namespace HelloROM
             object json;
             if (!App.Current.Properties.TryGetValue("json", out json))
             {
-                await DisplayAlert("Error", "json doesn't exist", "OK");
+                await DisplayAlert(Translations.Errors.Error, "json doesn't exist", "OK");
                 return;
             }
             ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
