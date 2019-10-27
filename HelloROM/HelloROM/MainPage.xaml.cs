@@ -57,7 +57,12 @@ namespace HelloROM
                     UseMobileConnection = true;
                 }
             }
-            if (!CrossConnectivity.Current.IsConnected || !(bool)UseMobileConnection)
+            object UseCustomJSON;
+            if (!App.Current.Properties.TryGetValue("UseCustomJSON", out UseCustomJSON))
+            {
+                UseCustomJSON = false;
+            }
+            if (!CrossConnectivity.Current.IsConnected || !(bool)UseMobileConnection || (bool)UseCustomJSON)
             {
                 if (!App.Current.Properties.TryGetValue("json", out json))
                 {
@@ -78,6 +83,7 @@ namespace HelloROM
 
         private async void UpdateStat()
         {
+            App.Current.Properties["UseCustomJSON"] = false;
             if (!CrossConnectivity.Current.IsConnected)
             {
                 await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");

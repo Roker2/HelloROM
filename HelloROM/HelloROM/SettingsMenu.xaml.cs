@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
 
 namespace HelloROM
 {
@@ -73,6 +75,15 @@ namespace HelloROM
                 default:
                     break;
             }
+        }
+
+        private async void CustomJSONFile_Clicked(object sender, EventArgs e)
+        {
+            FileData fileData = await CrossFilePicker.Current.PickFile();
+            if (fileData == null)
+                return;
+            App.Current.Properties["json"] = System.Text.Encoding.UTF8.GetString(fileData.DataArray);
+            App.Current.Properties["UseCustomJSON"] = true;
         }
     }
 }

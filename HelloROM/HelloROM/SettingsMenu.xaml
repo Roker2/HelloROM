@@ -11,6 +11,9 @@
                     <ViewCell>
                         <Button x:Name="SortTypeButton" BorderWidth="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="StartAndExpand" Clicked="SortTypeButton_Clicked"/>
                     </ViewCell>
+                    <ViewCell>
+                        <Button x:Name="CustomJSONFile" Text="Use custom catalog from file" BorderWidth="0" BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="StartAndExpand" Clicked="CustomJSONFile_Clicked"/>
+                    </ViewCell>
                 </TableSection>
             </TableRoot>
         </TableView>
