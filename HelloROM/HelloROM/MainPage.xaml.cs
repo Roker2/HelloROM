@@ -48,6 +48,7 @@ namespace HelloROM
 
         private async void GetStat()
         {
+            IsBusy = true;
             object json = "";
             object UseMobileConnection;
             if (!App.Current.Properties.TryGetValue("UseMobileConnection", out UseMobileConnection))
@@ -84,6 +85,7 @@ namespace HelloROM
             }
             SetItemsSource((string)json);
             App.Current.Properties["json"] = (string)json;
+            IsBusy = false;
         }
 
         private async void UpdateStat()
