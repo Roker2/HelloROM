@@ -12,14 +12,21 @@
         <ContentPage.Content>
             <ScrollView>
                 <StackLayout>
-                    <ffimageloading:CachedImage x:Name="ROMPic" WidthRequest="100" HeightRequest="100" Margin="0, 20, 0, 0">
+                    <ffimageloading:CachedImage x:Name="ROMPic"
+                                                WidthRequest="100"
+                                                HeightRequest="100"
+                                                Margin="0, 20, 0, 0">
                         <ffimageloading:CachedImage.Transformations>
                             <fftransformations:CircleTransformation/>
                         </ffimageloading:CachedImage.Transformations>
                     </ffimageloading:CachedImage>
-                    <Label x:Name="ROMName" FontSize="30" Margin="5, 0, 0, 0"/>
-                    <Label x:Name="ROMInf" Margin="5, 0, 0, 0"/>
-                    <StackLayout x:Name="Buttons" VerticalOptions="EndAndExpand">
+                    <Label x:Name="ROMName"
+                           FontSize="30"
+                           Margin="5, 0, 0, 0"/>
+                    <Label x:Name="ROMInf"
+                           Margin="5, 0, 0, 0"/>
+                    <StackLayout x:Name="Buttons"
+                                 VerticalOptions="EndAndExpand">
                         <!--<Button x:Name="Button_Github" Text="GitHub" BackgroundColor="White" Clicked="Button_Github_Clicked"/>
                         <Button x:Name="Button_Site" Text="Site" BackgroundColor="White" Clicked="Button_Site_Clicked"/>
                         <Button x:Name="Button_Gerrit" Text="Gerrit" BackgroundColor="White" Clicked="Button_Gerrit_Clicked"/>-->

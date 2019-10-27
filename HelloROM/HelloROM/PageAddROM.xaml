@@ -6,18 +6,40 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Entry x:Name="ROMName" Placeholder="{i18n:Translate Name}" Margin="0, 10, 0, 0"/>
-                <Entry x:Name="ROMBase" Placeholder="{i18n:Translate Base}"/>
-                <Entry x:Name="PicURL" Placeholder="{i18n:Translate URLPicture}" Keyboard="Url"/>
-                <Entry x:Name="ROMDescription" Placeholder="{i18n:Translate Description}"/>
-                <Entry x:Name="ROMSite" Placeholder="{i18n:Translate Officialsite}" Keyboard="Url"/>
-                <Entry x:Name="ROMGerrit" Placeholder="Gerrit" Keyboard="Url"/>
-                <Entry x:Name="ROMGithub" Placeholder="Github" Keyboard="Url"/>
-                <Entry x:Name="ScreenshotsNumber" Keyboard="Numeric" TextChanged="ScreenshotsNumber_TextChanged" Text="0" Placeholder="{i18n:Translate ScreenshotsNumber}"/>
+                <Entry x:Name="ROMName"
+                       Placeholder="{i18n:Translate Name}"
+                       Margin="0, 10, 0, 0"/>
+                <Entry x:Name="ROMBase" 
+                       Placeholder="{i18n:Translate Base}"/>
+                <Entry x:Name="PicURL"
+                       Placeholder="{i18n:Translate URLPicture}" Keyboard="Url"/>
+                <Entry x:Name="ROMDescription"
+                       Placeholder="{i18n:Translate Description}"/>
+                <Entry x:Name="ROMSite"
+                       Placeholder="{i18n:Translate Officialsite}" 
+                       Keyboard="Url"/>
+                <Entry x:Name="ROMGerrit"
+                       Placeholder="Gerrit"
+                       Keyboard="Url"/>
+                <Entry x:Name="ROMGithub"
+                       Placeholder="Github"
+                       Keyboard="Url"/>
+                <Entry x:Name="ScreenshotsNumber"
+                       Keyboard="Numeric"
+                       TextChanged="ScreenshotsNumber_TextChanged"
+                       Text="0"
+                       Placeholder="{i18n:Translate ScreenshotsNumber}"/>
                 <StackLayout x:Name="Screenshots"/>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                    <Button x:Name="Preview" Text="{i18n:Translate Preview}" Clicked="Preview_Clicked" BackgroundColor="White"/>
-                    <Button x:Name="SaveToJSON" Text="{i18n:Translate ShareJSON}" Clicked="SaveToJSON_Clicked" BackgroundColor="White"/>
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="CenterAndExpand">
+                    <Button x:Name="Preview" 
+                            Text="{i18n:Translate Preview}"
+                            Clicked="Preview_Clicked"
+                            BackgroundColor="White"/>
+                    <Button x:Name="SaveToJSON"
+                            Text="{i18n:Translate ShareJSON}"
+                            Clicked="SaveToJSON_Clicked"
+                            BackgroundColor="White"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
