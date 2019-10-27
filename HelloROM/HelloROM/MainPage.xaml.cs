@@ -57,7 +57,9 @@ namespace HelloROM
             }
             if (CrossConnectivity.Current.IsConnected == true)
             {
+#if DEBUG
                 Console.WriteLine("Type connection: " + CrossConnectivity.Current.ConnectionTypes.FirstOrDefault().ToString());
+#endif
                 if (CrossConnectivity.Current.ConnectionTypes.FirstOrDefault().ToString() != "Cellular")
                 {
                     UseMobileConnection = true;
