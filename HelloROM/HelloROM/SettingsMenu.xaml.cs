@@ -51,6 +51,8 @@ namespace HelloROM
                 case SortTypes.Base:
                     SortTypeButton.Text = "Sort by base";
                     break;
+                default:
+                    break;
             }
         }
 
