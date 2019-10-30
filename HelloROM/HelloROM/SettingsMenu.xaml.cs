@@ -61,7 +61,7 @@ namespace HelloROM
 
         private async void SortTypeButton_Clicked(object sender, EventArgs e)
         {
-            var actionSheet = await DisplayActionSheet("Choose sort type", "Cancel", null, "Name", "Base");
+            string actionSheet = await DisplayActionSheet("Choose sort type", "Cancel", null, "Name", "Base");
             switch (actionSheet)
             {
                 case "Name":
