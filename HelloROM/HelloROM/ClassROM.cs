@@ -50,6 +50,36 @@ namespace HelloROM
             if (_description != null)
                 Description = _description;
         }
+
+        string ToJSONInf(string Tag, string Info)
+        {
+            return "\"" + Tag + "\":\"" + Info + "\"";
+        }
+
+        public string ToJSON()
+        {
+            string JSON_str = "{";
+            JSON_str += ToJSONInf("Name", Name) + ",\n" + ToJSONInf("Base", Name) + ",\n";
+            if (!string.IsNullOrEmpty(Image))
+                JSON_str += ToJSONInf("Image", Image) + ",\n";
+            if (!string.IsNullOrEmpty(Description))
+                JSON_str += ToJSONInf("Description", Description) + ",\n";
+            if (!string.IsNullOrEmpty(SiteUrl))
+                JSON_str += ToJSONInf("SiteUrl", SiteUrl) + ",\n";
+            if (!string.IsNullOrEmpty(GerritUrl))
+                JSON_str += ToJSONInf("GerritUrl", GerritUrl) + ",\n";
+            if (!string.IsNullOrEmpty(GithubUrl))
+                JSON_str += ToJSONInf("GithubUrl", GithubUrl) + ",\n";
+            JSON_str += "\"Screenshots\":\n[";
+            for (int i = 0; i < Screenshots.Count; i++)
+            {
+                JSON_str += "\"" + Screenshots[i] + "\"";
+                if (i != Screenshots.Count - 1)
+                    JSON_str += ",\n";
+            }
+            JSON_str += "]}";
+            return JSON_str;
+        }
     }
 
     class ROMs : IEnumerable<ROM>
