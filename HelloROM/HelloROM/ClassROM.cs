@@ -50,24 +50,6 @@ namespace HelloROM
             if (_description != null)
                 Description = _description;
         }
-
-        /*public ROM (string _Name, double _AndroidVersion, string _Base, string _CodeName)
-        {
-            Name = _Name;
-            AndroidVersion = _AndroidVersion;
-            Base = _Base;
-            Codename = _CodeName;
-        }*/
-
-        public string GetName()
-        {
-            return Name;
-        }
-
-        public string GetBase()
-        {
-            return Base;
-        }
     }
 
     class ROMs : IEnumerable<ROM>
