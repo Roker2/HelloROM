@@ -86,5 +86,17 @@
 "https://i.imgur.com/4vvEvrU.jpg",
 "https://i.imgur.com/e879zBI.jpg",
 "https://i.imgur.com/OYa8Nfa.jpg",
-"https://i.imgur.com/Ra66DWJ.jpg"]}
+"https://i.imgur.com/Ra66DWJ.jpg"]},
+{"Name":"Havoc OS",
+"Base":"AOSP",
+"Image":"https://avatars0.githubusercontent.com/u/39052374",
+"Description":"Description is not exist",
+"GithubUrl":"https://github.com/Havoc-OS",
+"Screenshots":
+["https://a.fsdn.com/con/app/proj/havoc-os/screenshots/Screenshot_Ruthless_Launcher_20180803-133540.png",
+"https://a.fsdn.com/con/app/proj/havoc-os/screenshots/Screenshot_Ruthless_Launcher_20180803-133603.png",
+"https://a.fsdn.com/con/app/proj/havoc-os/screenshots/Screenshot_Ruthless_Launcher_20180803-133607.png",
+"https://a.fsdn.com/con/app/proj/havoc-os/screenshots/Screenshot_Ruthless_Launcher_20180803-133626.png",
+"https://a.fsdn.com/con/app/proj/havoc-os/screenshots/Screenshot_Settings_20180803-133611.png",
+"https://a.fsdn.com/con/app/proj/havoc-os/screenshots/Screenshot_Settings_20180803-012439.png"]}
 ]
