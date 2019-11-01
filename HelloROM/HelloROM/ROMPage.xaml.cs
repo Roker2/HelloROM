@@ -27,20 +27,20 @@ namespace HelloROM
             GithubUrl = _rom.GithubUrl;
             ROMScreensots.ItemsSource = _rom.Screenshots;
 
-            if(GithubUrl != null)
-            {
-                Button Button_Github = new Button();
-                make_button_style(Button_Github, "GitHub");
-                Button_Github.Clicked += Button_Github_Clicked;
-                Buttons.Children.Add(Button_Github);
-            }
-
-            if(site != null)
+            if (site != null)
             {
                 Button Button_Site = new Button();
                 make_button_style(Button_Site, Translations.Translation.Officialsite);
                 Button_Site.Clicked += Button_Site_Clicked;
                 Buttons.Children.Add(Button_Site);
+            }
+
+            if (GithubUrl != null)
+            {
+                Button Button_Github = new Button();
+                make_button_style(Button_Github, "GitHub");
+                Button_Github.Clicked += Button_Github_Clicked;
+                Buttons.Children.Add(Button_Github);
             }
 
             if(GerritUrl != null)
