@@ -30,6 +30,11 @@ namespace HelloROM
             GithubUrl = _Github;
         }
 
+        public ROM()
+        {
+
+        }
+
         public void AddScreenshot(string URL)
         {
             Screenshots.Add(URL);
