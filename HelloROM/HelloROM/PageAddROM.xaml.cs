@@ -27,7 +27,7 @@ namespace HelloROM
             ROM PreviewROM = new ROM(ROMName.Text, ROMBase.Text, PicURL.Text, ROMSite.Text, ROMGerrit.Text, ROMGithub.Text);
             PreviewROM.AddDescription(ROMDescription.Text);
             PreviewROM.Screenshots.Clear();
-            for(int i = 0; i < ScreensNumber; i++)
+            for(int i = 0; i < entryMass.Count; i++)
             {
                 PreviewROM.AddScreenshot(entryMass[i].Text);
             }
