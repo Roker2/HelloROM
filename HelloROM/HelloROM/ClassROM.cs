@@ -64,7 +64,7 @@ namespace HelloROM
         public string ToJSON()
         {
             string JSON_str = "{";
-            JSON_str += ToJSONInf("Name", Name) + ",\n" + ToJSONInf("Base", Name) + ",\n";
+            JSON_str += ToJSONInf("Name", Name) + ",\n" + ToJSONInf("Base", Base) + ",\n";
             if (!string.IsNullOrEmpty(Image))
                 JSON_str += ToJSONInf("Image", Image) + ",\n";
             if (!string.IsNullOrEmpty(Description))
