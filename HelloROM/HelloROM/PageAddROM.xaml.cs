@@ -96,27 +96,22 @@ namespace HelloROM
                 DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoOneOrMoreScreenshots, "OK");
                 return;
             }
-            string JSON_str = "{";
-            JSON_str += ToJSONInf("Name", ROMName.Text) + ",\n" + ToJSONInf("Base", ROMBase.Text) + ",\n";
+            ROM rOM = new ROM { Name = ROMName.Text, Base = ROMBase.Text };
             if (!string.IsNullOrEmpty(PicURL.Text))
-                JSON_str += ToJSONInf("Image", PicURL.Text) + ",\n";
+                rOM.Image = PicURL.Text;
             if (!string.IsNullOrEmpty(ROMDescription.Text))
-                JSON_str += ToJSONInf("Description", ROMDescription.Text) + ",\n";
+                rOM.Description = ROMDescription.Text;
             if (!string.IsNullOrEmpty(ROMSite.Text))
-                JSON_str += ToJSONInf("SiteUrl", ROMSite.Text) + ",\n";
+                rOM.SiteUrl = ROMSite.Text;
             if (!string.IsNullOrEmpty(ROMGerrit.Text))
-                JSON_str += ToJSONInf("GerritUrl", ROMGerrit.Text) + ",\n";
+                rOM.GerritUrl = ROMGerrit.Text;
             if (!string.IsNullOrEmpty(ROMGithub.Text))
-                JSON_str += ToJSONInf("GithubUrl", ROMGithub.Text) + ",\n";
-            JSON_str += "\"Screenshots\":\n[";
-            for (int i = 0; i < ScreensNumber; i++)
+                rOM.GithubUrl = ROMGithub.Text;
+            for (int i = 0; i < entryMass.Count; i++)
             {
-                JSON_str += "\"" + entryMass[i].Text + "\"";
-                if (i != ScreensNumber - 1)
-                    JSON_str += ",\n";
+                rOM.AddScreenshot(entryMass[i].Text);
             }
-            JSON_str += "]}";
-            ShareText(JSON_str);
+            ShareText(rOM.ToJSON());
         }
     }
 }
