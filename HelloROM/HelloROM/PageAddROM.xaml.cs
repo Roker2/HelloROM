@@ -24,6 +24,8 @@ namespace HelloROM
 
         private async void Preview_Clicked(object sender, EventArgs e)
         {
+            if (!IsOkay())
+                return;
             ROM PreviewROM = new ROM(ROMName.Text, ROMBase.Text, PicURL.Text, ROMSite.Text, ROMGerrit.Text, ROMGithub.Text);
             PreviewROM.AddDescription(ROMDescription.Text);
             PreviewROM.Screenshots.Clear();
@@ -74,28 +76,35 @@ namespace HelloROM
             return true;
         }
 
-        private void SaveToJSON_Clicked(object sender, EventArgs e)
+        private bool IsOkay()
         {
             if (string.IsNullOrEmpty(ROMName.Text))
             {
                 DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoName, "OK");
-                return;
+                return false;
             }
             if (string.IsNullOrEmpty(ROMBase.Text))
             {
                 DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoBase, "OK");
-                return;
+                return false;
             }
             if ((ScreensNumber == 0))
             {
                 DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoScreenshots, "OK");
-                return;
+                return false;
             }
             if (!CheckScreenshots())
             {
                 DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoOneOrMoreScreenshots, "OK");
-                return;
+                return false;
             }
+            return true;
+        }
+
+        private void SaveToJSON_Clicked(object sender, EventArgs e)
+        {
+            if (!IsOkay())
+                return;
             ROM rOM = new ROM { Name = ROMName.Text, Base = ROMBase.Text };
             if (!string.IsNullOrEmpty(PicURL.Text))
                 rOM.Image = PicURL.Text;
