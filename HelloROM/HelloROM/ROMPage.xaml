@@ -22,7 +22,7 @@
                     </ffimageloading:CachedImage>
                     <Label x:Name="ROMName"
                            FontSize="30"
-                           Margin="5, 0, 0, 0"/>
+                           HorizontalOptions="CenterAndExpand"/>
                     <Label x:Name="ROMInf"
                            Margin="5, 0, 0, 0"/>
                     <StackLayout x:Name="Buttons"
