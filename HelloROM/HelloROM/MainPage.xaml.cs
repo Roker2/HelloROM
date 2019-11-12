@@ -48,6 +48,9 @@ namespace HelloROM
 
         private async void GetStat()
         {
+            ActivityIndicator IsDownloadJSON = new ActivityIndicator();
+            IsDownloadJSON.IsRunning = true;
+            ROMView.Children.Add(IsDownloadJSON);
             IsBusy = true;
             object json = "";
             object UseMobileConnection;
@@ -88,6 +91,7 @@ namespace HelloROM
             SetItemsSource((string)json);
             App.Current.Properties["json"] = (string)json;
             IsBusy = false;
+            ROMView.Children.Remove(IsDownloadJSON);
         }
 
         private async void UpdateStat()
