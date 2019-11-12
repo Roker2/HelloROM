@@ -16,7 +16,7 @@
                      Priority="1"
                      Clicked="ToolbarItem_Clicked_1"/>
     </ContentPage.ToolbarItems>
-    <StackLayout>
+    <StackLayout x:Name="ROMView">
         <SearchBar Placeholder="{i18n:Translate Search}" 
                    TextChanged="SearchBar_TextChanged"/>
         <ListView x:Name="ROMList"
