@@ -12,7 +12,7 @@
                      Priority="0"
                      Clicked="ToolbarItem_Clicked"/>
         <ToolbarItem Order="Secondary"
-                     Text="Settings" 
+                     Text="{i18n:Translate Settings}" 
                      Priority="1"
                      Clicked="ToolbarItem_Clicked_1"/>
     </ContentPage.ToolbarItems>
