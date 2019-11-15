@@ -127,12 +127,27 @@
     <value>базируется на</value>
     <comment>For example "CarbonROM is based on AOSP"</comment>
   </data>
+  <data name="BaseSort" xml:space="preserve">
+    <value>Сортировка по базе</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Данные</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Описание</value>
+  </data>
+  <data name="InternetConnection" xml:space="preserve">
+    <value>Интернет соединение</value>
+  </data>
+  <data name="MobileConnection" xml:space="preserve">
+    <value>Обновлять каталог через мобильный интернет</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Название</value>
     <comment>It is ROM name</comment>
+  </data>
+  <data name="NameSort" xml:space="preserve">
+    <value>Сортировка по названию</value>
   </data>
   <data name="Officialsite" xml:space="preserve">
     <value>Официальный сайт</value>
@@ -152,10 +167,16 @@
   <data name="Search" xml:space="preserve">
     <value>Поиск</value>
   </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
   <data name="ShareJSON" xml:space="preserve">
     <value>Отправить JSON</value>
   </data>
   <data name="URLPicture" xml:space="preserve">
     <value>Ссылка на изображение</value>
+  </data>
+  <data name="UseCustomJSON" xml:space="preserve">
+    <value>Использовать кастомный каталог из файла</value>
   </data>
 </root>

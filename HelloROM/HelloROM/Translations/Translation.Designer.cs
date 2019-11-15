@@ -88,6 +88,24 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Sort by base.
+        /// </summary>
+        internal static string BaseSort {
+            get {
+                return ResourceManager.GetString("BaseSort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Data.
+        /// </summary>
+        internal static string Data {
+            get {
+                return ResourceManager.GetString("Data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Description.
         /// </summary>
         internal static string Description {
@@ -97,11 +115,38 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Internet connection.
+        /// </summary>
+        internal static string InternetConnection {
+            get {
+                return ResourceManager.GetString("InternetConnection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Update catalog with mobile connection.
+        /// </summary>
+        internal static string MobileConnection {
+            get {
+                return ResourceManager.GetString("MobileConnection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Name.
         /// </summary>
         internal static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sort by name.
+        /// </summary>
+        internal static string NameSort {
+            get {
+                return ResourceManager.GetString("NameSort", resourceCulture);
             }
         }
         
@@ -160,6 +205,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Settings.
+        /// </summary>
+        internal static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Send JSON.
         /// </summary>
         internal static string ShareJSON {
@@ -174,6 +228,15 @@ namespace HelloROM.Translations {
         internal static string URLPicture {
             get {
                 return ResourceManager.GetString("URLPicture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Use custom catalog from file.
+        /// </summary>
+        internal static string UseCustomJSON {
+            get {
+                return ResourceManager.GetString("UseCustomJSON", resourceCulture);
             }
         }
     }

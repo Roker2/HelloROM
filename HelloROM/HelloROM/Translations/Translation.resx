@@ -127,12 +127,27 @@
     <value>is based on</value>
     <comment>For example "CarbonROM is based on AOSP"</comment>
   </data>
+  <data name="BaseSort" xml:space="preserve">
+    <value>Sort by base</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
+  </data>
+  <data name="InternetConnection" xml:space="preserve">
+    <value>Internet connection</value>
+  </data>
+  <data name="MobileConnection" xml:space="preserve">
+    <value>Update catalog with mobile connection</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
     <comment>It is ROM name</comment>
+  </data>
+  <data name="NameSort" xml:space="preserve">
+    <value>Sort by name</value>
   </data>
   <data name="Officialsite" xml:space="preserve">
     <value>Official site</value>
@@ -152,10 +167,16 @@
   <data name="Search" xml:space="preserve">
     <value>Search</value>
   </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
   <data name="ShareJSON" xml:space="preserve">
     <value>Send JSON</value>
   </data>
   <data name="URLPicture" xml:space="preserve">
     <value>URL Picture</value>
+  </data>
+  <data name="UseCustomJSON" xml:space="preserve">
+    <value>Use custom catalog from file</value>
   </data>
 </root>
