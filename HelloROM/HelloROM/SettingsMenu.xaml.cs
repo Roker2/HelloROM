@@ -46,10 +46,10 @@ namespace HelloROM
             switch ((SortTypes)objSortType)
             {
                 case SortTypes.Name:
-                    SortTypeButton.Text = "Sort by name";
+                    SortTypeButton.Text = Translations.Translation.NameSort;
                     break;
                 case SortTypes.Base:
-                    SortTypeButton.Text = "Sort by base";
+                    SortTypeButton.Text = Translations.Translation.BaseSort;
                     break;
                 default:
                     break;

@@ -2,17 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloROM.SettingsMenu"
-             Title="Settings">
+             xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM"
+             Title="{i18n:Translate Settings}">
     <ContentPage.Content>
         <TableView>
             <TableRoot>
-                <TableSection Title="Internet connection">
+                <TableSection Title="{i18n:Translate InternetConnection}">
                     <SwitchCell x:Name="UseMobileConnection"
-                                Text="Update catalog with mobile connection"
+                                Text="{i18n:Translate MobileConnection}"
                                 On="True"
                                 OnChanged="UseMobileInternet_OnChanged"/>
                 </TableSection>
-                <TableSection Title="Data">
+                <TableSection Title="{i18n:Translate Data}">
                     <ViewCell>
                         <Button x:Name="SortTypeButton"
                                 TextColor="#757575"
@@ -24,7 +25,7 @@
                     </ViewCell>
                     <ViewCell>
                         <Button x:Name="CustomJSONFile"
-                                Text="Use custom catalog from file"
+                                Text="{i18n:Translate UseCustomJSON}"
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
