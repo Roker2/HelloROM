@@ -83,5 +83,10 @@ namespace HelloROM
         {
             Device.OpenUri(new Uri(GithubUrl));
         }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await ROMPic.RotateTo(360, 2000);
+        }
     }
 }

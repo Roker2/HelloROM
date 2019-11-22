@@ -16,6 +16,9 @@
                                                 WidthRequest="100"
                                                 HeightRequest="100"
                                                 Margin="0, 20, 0, 0">
+                        <ffimageloading:CachedImage.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
+                        </ffimageloading:CachedImage.GestureRecognizers>
                         <ffimageloading:CachedImage.Transformations>
                             <fftransformations:CircleTransformation/>
                         </ffimageloading:CachedImage.Transformations>
