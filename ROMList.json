@@ -102,7 +102,8 @@
 {"Name":"Bootleggers ROM",
 "Base":"AOSP",
 "Image":"https://avatars1.githubusercontent.com/u/14201107",
-"Description":"Description is not exist",
+"Description":"Bootleggers ROM is a AOSP based ROM with some extra patches anf features from other projects, like LineageOS, Dirty Unicorns, PixelExperience, OmniROM, and many more. Our goal is trying to add the best to make you feel like 家. With all those feature, we also have some extra apps, themes and wallpaper to try to give you a great experience since the first boot.",
+"SiteUrl":"http://www.bootleggersrom.xyz/",
 "GithubUrl":"https://github.com/BootleggersROM",
 "Screenshots":
 ["https://github.com/Roker2/HelloROMScreenshots/raw/master/BTLG/1.jpg",
