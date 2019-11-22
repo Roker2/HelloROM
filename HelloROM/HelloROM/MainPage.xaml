@@ -19,6 +19,9 @@
     <StackLayout x:Name="ROMView">
         <SearchBar Placeholder="{i18n:Translate Search}" 
                    TextChanged="SearchBar_TextChanged"/>
+        <ActivityIndicator x:Name="IsDownloadJSON"
+                           IsRunning="True"
+                           VerticalOptions="StartAndExpand"/>
         <ListView x:Name="ROMList"
                   HasUnevenRows="True"
                   ItemTapped="ROMList_ItemTapped"

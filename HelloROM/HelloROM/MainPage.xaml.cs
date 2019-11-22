@@ -48,8 +48,6 @@ namespace HelloROM
 
         private async void GetStat()
         {
-            ActivityIndicator IsDownloadJSON = new ActivityIndicator();
-            IsDownloadJSON.IsRunning = true;
             ROMView.Children.Add(IsDownloadJSON);
             IsBusy = true;
             object json = "";
@@ -88,10 +86,13 @@ namespace HelloROM
                 var response = await client.GetAsync("https://github.com/Roker2/HelloROM/raw/master/ROMList.json");
                 json = await response.Content.ReadAsStringAsync();
             }
-            SetItemsSource((string)json);
             App.Current.Properties["json"] = (string)json;
+            await Task.Delay(5000);
+            Task<bool> task = IsDownloadJSON.FadeTo(0);
+            await task.ContinueWith(t => { });
             IsBusy = false;
             ROMView.Children.Remove(IsDownloadJSON);
+            SetItemsSource((string)json);
         }
 
         private async void UpdateStat()
