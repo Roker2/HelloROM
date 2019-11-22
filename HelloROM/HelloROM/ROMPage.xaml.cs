@@ -86,7 +86,8 @@ namespace HelloROM
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await ROMPic.RotateTo(360, 2000);
+            DependencyService.Get<IAudio>().PlayAudioFile("uiii.mp3");
+            await ROMPic.RotateTo(360, 3066);
         }
     }
 }
