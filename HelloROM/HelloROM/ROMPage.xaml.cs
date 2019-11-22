@@ -50,6 +50,17 @@ namespace HelloROM
                 Button_Gerrit.Clicked += Button_Gerrit_Clicked;
                 Buttons.Children.Add(Button_Gerrit);
             }
+
+            Command tappedCoomand = new Command(() =>
+            {
+                if (ROMInf.FontSize == 21)
+                    ROMInf.FontSize = 14;
+                else
+                    ROMInf.FontSize = 21;
+            });
+            TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer { Command = tappedCoomand };
+            tapGestureRecognizer.NumberOfTapsRequired = 2;
+            ROMInf.GestureRecognizers.Add(tapGestureRecognizer);
         }
 
         void make_button_style (Button _button, string bt_name)
