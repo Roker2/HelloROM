@@ -120,6 +120,9 @@
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="ErrorIsNotJSON" xml:space="preserve">
+    <value>It's not .json file.</value>
+  </data>
   <data name="ErrorNoBase" xml:space="preserve">
     <value>You didn't write base.</value>
   </data>

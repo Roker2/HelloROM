@@ -70,6 +70,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на It&apos;s not .json file..
+        /// </summary>
+        internal static string ErrorIsNotJSON {
+            get {
+                return ResourceManager.GetString("ErrorIsNotJSON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на You didn&apos;t write base..
         /// </summary>
         internal static string ErrorNoBase {

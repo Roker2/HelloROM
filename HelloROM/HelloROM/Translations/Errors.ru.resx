@@ -120,6 +120,9 @@
   <data name="Error" xml:space="preserve">
     <value>Ошибка</value>
   </data>
+  <data name="ErrorIsNotJSON" xml:space="preserve">
+    <value>Это не .json файл.</value>
+  </data>
   <data name="ErrorNoBase" xml:space="preserve">
     <value>Вы не указали базу.</value>
   </data>
