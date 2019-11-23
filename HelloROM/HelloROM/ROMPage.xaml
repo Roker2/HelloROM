@@ -27,7 +27,11 @@
                            FontSize="30"
                            HorizontalOptions="CenterAndExpand"/>
                     <Label x:Name="ROMInf"
-                           Margin="5, 0, 0, 0"/>
+                           Margin="5, 0, 0, 0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="2"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                     <StackLayout x:Name="Buttons"
                                  VerticalOptions="EndAndExpand">
                         <!--<Button x:Name="Button_Github" Text="GitHub" BackgroundColor="White" Clicked="Button_Github_Clicked"/>

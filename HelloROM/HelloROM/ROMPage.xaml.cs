@@ -50,17 +50,6 @@ namespace HelloROM
                 Button_Gerrit.Clicked += Button_Gerrit_Clicked;
                 Buttons.Children.Add(Button_Gerrit);
             }
-
-            Command tappedCoomandControlFontSize = new Command(() =>
-            {
-                if (ROMInf.FontSize == 21)
-                    ROMInf.FontSize = 14;
-                else
-                    ROMInf.FontSize = 21;
-            });
-            TapGestureRecognizer tapGestureRecognizerControlFontSize = new TapGestureRecognizer { Command = tappedCoomandControlFontSize };
-            tapGestureRecognizerControlFontSize.NumberOfTapsRequired = 2;
-            ROMInf.GestureRecognizers.Add(tapGestureRecognizerControlFontSize);
         }
 
         void make_button_style (Button _button, string bt_name)
@@ -88,6 +77,14 @@ namespace HelloROM
         {
             DependencyService.Get<IAudio>().PlayAudioFile("uiii.mp3");
             await ROMPic.RelRotateTo(360, 3066);
+        }
+
+        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+            if (ROMInf.FontSize == 21)
+                ROMInf.FontSize = 14;
+            else
+                ROMInf.FontSize = 21;
         }
     }
 }
