@@ -48,7 +48,6 @@ namespace HelloROM
 
         private async void GetStat()
         {
-            ROMView.Children.Add(IsDownloadJSON);
             IsBusy = true;
             object json = "";
             object UseMobileConnection;
