@@ -15,6 +15,10 @@
                      Text="{i18n:Translate Settings}" 
                      Priority="1"
                      Clicked="ToolbarItem_Clicked_1"/>
+        <ToolbarItem Order="Secondary"
+                     Text="About program"
+                     Priority="2"
+                     Clicked="ToolbarItem_Clicked_2"/>
     </ContentPage.ToolbarItems>
     <StackLayout x:Name="ROMView">
         <SearchBar Placeholder="{i18n:Translate Search}" 

@@ -158,5 +158,10 @@ namespace HelloROM
             }
             GetStat();
         }
+
+        private async void ToolbarItem_Clicked_2(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AboutProgram());
+        }
     }
 }
