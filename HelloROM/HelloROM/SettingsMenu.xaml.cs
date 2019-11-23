@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -84,7 +85,19 @@ namespace HelloROM
             FileData fileData = await CrossFilePicker.Current.PickFile();
             if (fileData == null)
                 return;
-            App.Current.Properties["json"] = System.Text.Encoding.UTF8.GetString(fileData.DataArray);
+            string json = "";
+            FileStream fs = File.OpenRead(fileData.FilePath);
+            using (StreamReader streamReader = new StreamReader(fs))
+            {
+                while (streamReader.EndOfStream == false)
+                {
+                    json += streamReader.ReadLine();
+                    json += '\n';
+                }
+            }
+            fs.Close();
+            Console.WriteLine(json);
+            App.Current.Properties["json"] = json;
             App.Current.Properties["UseCustomJSON"] = true;
         }
     }
