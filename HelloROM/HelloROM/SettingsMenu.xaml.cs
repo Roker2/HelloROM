@@ -87,7 +87,7 @@ namespace HelloROM
                 return;
             if (!fileData.FilePath.Contains(".json"))
             {
-                await DisplayAlert("Error", "It's not .json file.", "Ok");
+                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorIsNotJSON, "OK");
                 return;
             }
             string json = "";
