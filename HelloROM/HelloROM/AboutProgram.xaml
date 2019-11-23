@@ -5,7 +5,9 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand">
             <Image Source="program_icon.png" HeightRequest="100" WidthRequest="100" VerticalOptions="StartAndExpand"/>
-            <Label Text="HelloROM"/>
+            <Label Text="HelloROM" 
+                   FontSize="30"/>
+            <Label Text="Hello Android user! It is catalog of custom ROMs. Can not you find the best ROM or do you not find good ROM for your device? This catalog for you!\nYou can find ROM info, sreenshots."/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
