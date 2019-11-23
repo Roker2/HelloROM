@@ -157,8 +157,7 @@ namespace HelloROM
                 await DisplayAlert(Translations.Errors.Error, "json doesn't exist", "OK");
                 return;
             }
-            ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
-            Sorting(temp);
+            GetStat();
         }
     }
 }

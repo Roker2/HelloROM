@@ -85,6 +85,11 @@ namespace HelloROM
             FileData fileData = await CrossFilePicker.Current.PickFile();
             if (fileData == null)
                 return;
+            if (!fileData.FilePath.Contains(".json"))
+            {
+                await DisplayAlert("Error", "It's not .json file.", "Ok");
+                return;
+            }
             string json = "";
             FileStream fs = File.OpenRead(fileData.FilePath);
             using (StreamReader streamReader = new StreamReader(fs))
@@ -98,7 +103,7 @@ namespace HelloROM
             fs.Close();
             Console.WriteLine(json);
             App.Current.Properties["json"] = json;
-            App.Current.Properties["UseCustomJSON"] = true;
+            App.Current.Properties["UseCustomJSON"] = (bool)true;
         }
     }
 }
