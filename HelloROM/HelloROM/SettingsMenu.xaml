@@ -19,8 +19,6 @@
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
-                                HorizontalOptions="Start"
-                                VerticalOptions="StartAndExpand"
                                 Clicked="SortTypeButton_Clicked"/>
                     </ViewCell>
                     <ViewCell>
@@ -29,8 +27,6 @@
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
-                                HorizontalOptions="Start"
-                                VerticalOptions="StartAndExpand"
                                 Clicked="CustomJSONFile_Clicked"/>
                     </ViewCell>
                 </TableSection>
