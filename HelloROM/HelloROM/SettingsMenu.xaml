@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloROM.SettingsMenu"
              xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM"
+             xmlns:controls="clr-namespace:HelloROM;assembly=HelloROM"
              Title="{i18n:Translate Settings}">
     <ContentPage.Content>
         <TableView>
@@ -15,14 +16,14 @@
                 </TableSection>
                 <TableSection Title="{i18n:Translate Data}">
                     <ViewCell>
-                        <Button x:Name="SortTypeButton"
+                        <controls:ExtendedButton x:Name="SortTypeButton"
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
                                 Clicked="SortTypeButton_Clicked"/>
                     </ViewCell>
                     <ViewCell>
-                        <Button x:Name="CustomJSONFile"
+                        <controls:ExtendedButton x:Name="CustomJSONFile"
                                 Text="{i18n:Translate UseCustomJSON}"
                                 TextColor="#757575"
                                 BorderWidth="0"
