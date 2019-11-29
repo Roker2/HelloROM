@@ -19,7 +19,7 @@ namespace HelloROM.Android
 
 		public CultureInfo GetCurrentCultureInfo()
 		{
-			var netLanguage = "en";
+			string netLanguage = "en";
 			var androidLocale = Java.Util.Locale.Default;
 			netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
 
