@@ -20,6 +20,7 @@
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
+                                HorizontalContentAlignment="Start"
                                 Clicked="SortTypeButton_Clicked"/>
                     </ViewCell>
                     <ViewCell>
@@ -28,6 +29,7 @@
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
+                                HorizontalContentAlignment="Start"
                                 Clicked="CustomJSONFile_Clicked"/>
                     </ViewCell>
                 </TableSection>
