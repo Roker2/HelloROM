@@ -21,6 +21,7 @@
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
                                 HorizontalContentAlignment="Start"
+                                Margin="16, 0, 0, 0"
                                 Clicked="SortTypeButton_Clicked"/>
                     </ViewCell>
                     <ViewCell>
@@ -30,6 +31,7 @@
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
                                 HorizontalContentAlignment="Start"
+                                Margin="16, 0, 0, 0"
                                 Clicked="CustomJSONFile_Clicked"/>
                     </ViewCell>
                 </TableSection>
