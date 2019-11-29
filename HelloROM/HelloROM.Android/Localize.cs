@@ -19,15 +19,18 @@ namespace HelloROM.Android
 
 		public CultureInfo GetCurrentCultureInfo()
 		{
-			string netLanguage = "en";
-			var androidLocale = Java.Util.Locale.Default;
-			netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
+			object netLanguage = "en";
+            if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
+            {
+                var androidLocale = Java.Util.Locale.Default;
+                netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
+            }
 
-			// this gets called a lot - try/catch can be expensive so consider caching or something
-			System.Globalization.CultureInfo ci = null;
+            // this gets called a lot - try/catch can be expensive so consider caching or something
+            System.Globalization.CultureInfo ci = null;
 			try
 			{
-				ci = new System.Globalization.CultureInfo(netLanguage);
+				ci = new System.Globalization.CultureInfo((string)netLanguage);
 			}
 			catch (CultureNotFoundException e1)
 			{
@@ -35,14 +38,14 @@ namespace HelloROM.Android
 				// fallback to first characters, in this case "en"
 				try
 				{
-					var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));
-					Console.WriteLine(netLanguage + " failed, trying " + fallback + " (" + e1.Message + ")");
+					var fallback = ToDotnetFallbackLanguage(new PlatformCulture((string)netLanguage));
+					Console.WriteLine((string)netLanguage + " failed, trying " + fallback + " (" + e1.Message + ")");
 					ci = new System.Globalization.CultureInfo(fallback);
 				}
 				catch (CultureNotFoundException e2)
 				{
 					// iOS language not valid .NET culture, falling back to English
-					Console.WriteLine(netLanguage + " couldn't be set, using 'en' (" + e2.Message + ")");
+					Console.WriteLine((string)netLanguage + " couldn't be set, using 'en' (" + e2.Message + ")");
 					ci = new System.Globalization.CultureInfo("en");
 				}
 			}
