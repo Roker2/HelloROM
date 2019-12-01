@@ -11,7 +11,7 @@
                        HorizontalOptions="Center"/>
                 <Label x:Name="Info"
                        Text="Hello Android user! It is catalog of custom ROMs. Can not you find the best ROM or do you not find good ROM for your device? This catalog for you!
-                       You can find ROM info, sreenshots."
+You can find ROM info, sreenshots."
                        Margin="5, 0, 0, 0">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="2"/>
