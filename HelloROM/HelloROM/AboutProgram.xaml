@@ -7,7 +7,14 @@
             <Image Source="program_icon.png" HeightRequest="100" WidthRequest="100" VerticalOptions="Start"/>
             <Label Text="HelloROM" 
                    FontSize="30"/>
-            <Label Text="Hello Android user! It is catalog of custom ROMs. Can not you find the best ROM or do you not find good ROM for your device? This catalog for you!\nYou can find ROM info, sreenshots."/>
+            <Label x:Name="Info"
+                   Text="Hello Android user! It is catalog of custom ROMs. Can not you find the best ROM or do you not find good ROM for your device? This catalog for you!
+                   You can find ROM info, sreenshots."
+                           Margin="5, 0, 0, 0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="2"/>
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

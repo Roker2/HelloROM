@@ -15,6 +15,14 @@ namespace HelloROM
 		public AboutProgram ()
 		{
 			InitializeComponent ();
-		}
-	}
+        }
+
+        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+            if (Info.FontSize == 21)
+                Info.FontSize = 14;
+            else
+                Info.FontSize = 21;
+        }
+    }
 }
