@@ -22,8 +22,10 @@ You can find ROM info, sreenshots."
                             Clicked="Button_Clicked_1"/>
                     <Button Text="Screenshots repository"
                             Clicked="Button_Clicked"/>
-                    <Label Text="Developer: Dmitry Minko (Roker2)"/>
-                    <Label Text="Thanks all my friends. They sended many screenshots, they helped me. Thank you!"/>
+                    <Label Text="Developer: Dmitry Minko (Roker2)"
+                       Margin="5, 0, 0, 0"/>
+                    <Label Text="Thanks all my friends. They sended many screenshots, they helped me. Thank you!"
+                       Margin="5, 0, 0, 0"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
