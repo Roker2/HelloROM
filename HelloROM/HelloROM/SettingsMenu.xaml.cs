@@ -120,6 +120,7 @@ namespace HelloROM
                 default:
                     break;
             }
+            await DisplayAlert("Warning", "Please, restart program!", "OK");
         }
     }
 }
