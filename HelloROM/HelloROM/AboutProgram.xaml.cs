@@ -24,5 +24,15 @@ namespace HelloROM
             else
                 Info.FontSize = 21;
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://github.com/Roker2/HelloROMScreenshots"));
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://github.com/Roker2/HelloROM"));
+        }
     }
 }

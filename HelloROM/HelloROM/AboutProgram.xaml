@@ -18,8 +18,10 @@ You can find ROM info, sreenshots."
                     </Label.GestureRecognizers>
                 </Label>
                 <StackLayout HorizontalOptions="Start">
-                    <Button Text="Sources"/>
-                    <Button Text="Screenshots repository"/>
+                    <Button Text="Sources"
+                            Clicked="Button_Clicked_1"/>
+                    <Button Text="Screenshots repository"
+                            Clicked="Button_Clicked"/>
                     <Label Text="Developer: Dmitry Minko (Roker2)"/>
                     <Label Text="Thanks all my friends. They sended many screenshots, they helped me. Thank you!"/>
                 </StackLayout>
