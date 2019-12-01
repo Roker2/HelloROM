@@ -105,5 +105,21 @@ namespace HelloROM
             App.Current.Properties["json"] = json;
             App.Current.Properties["UseCustomJSON"] = (bool)true;
         }
+
+        private async void ChooseLanguage_Clicked(object sender, EventArgs e)
+        {
+            string actionSheet = await DisplayActionSheet("Choose language", "Cancel", null, "English", "Русский");
+            switch (actionSheet)
+            {
+                case "English":
+                    App.Current.Properties["netLanguage"] = "en";
+                    break;
+                case "Русский":
+                    App.Current.Properties["netLanguage"] = "ru";
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

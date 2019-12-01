@@ -35,6 +35,18 @@
                                 Clicked="CustomJSONFile_Clicked"/>
                     </ViewCell>
                 </TableSection>
+                <TableSection Title="Language">
+                    <ViewCell>
+                        <controls:ExtendedButton x:Name="ChooseLanguage"
+                                Text="Choose language"
+                                TextColor="#757575"
+                                BorderWidth="0"
+                                BackgroundColor="Transparent"
+                                HorizontalContentAlignment="Start"
+                                Margin="16, 0, 0, 0"
+                                Clicked="ChooseLanguage_Clicked"/>
+                    </ViewCell>
+                </TableSection>
             </TableRoot>
         </TableView>
     </ContentPage.Content>
