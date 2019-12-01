@@ -122,5 +122,11 @@ namespace HelloROM
             }
             await DisplayAlert("Warning", "Please, restart program!", "OK");
         }
+
+        private async void ResetLanguage_Clicked(object sender, EventArgs e)
+        {
+            App.Current.Properties.Remove("netLanguage");
+            await DisplayAlert("Warning", "Please, restart program!", "OK");
+        }
     }
 }

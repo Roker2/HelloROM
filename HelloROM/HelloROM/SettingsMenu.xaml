@@ -46,6 +46,16 @@
                                 Margin="16, 0, 0, 0"
                                 Clicked="ChooseLanguage_Clicked"/>
                     </ViewCell>
+                    <ViewCell>
+                        <controls:ExtendedButton x:Name="ResetLanguage"
+                                Text="Use system language"
+                                TextColor="#757575"
+                                BorderWidth="0"
+                                BackgroundColor="Transparent"
+                                HorizontalContentAlignment="Start"
+                                Margin="16, 0, 0, 0"
+                                Clicked="ResetLanguage_Clicked"/>
+                    </ViewCell>
                 </TableSection>
             </TableRoot>
         </TableView>
