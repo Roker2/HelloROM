@@ -20,9 +20,22 @@ namespace HelloROM.Android
 		public CultureInfo GetCurrentCultureInfo()
 		{
 			object netLanguage = "en";
-            if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
+            object UseSystemLanguage;
+            if (!App.Current.Properties.TryGetValue("UseSystemLanguage", out UseSystemLanguage))
+            {
+                UseSystemLanguage = true;
+            }
+            if (!(bool)UseSystemLanguage)
+            {
+                if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
+                {
+                    netLanguage = AndroidToDotnetLanguage(Java.Util.Locale.Default.ToString().Replace("_", "-"));
+                    App.Current.Properties["netLanguage"] = netLanguage;
+                }
+            } else
             {
                 netLanguage = AndroidToDotnetLanguage(Java.Util.Locale.Default.ToString().Replace("_", "-"));
+                App.Current.Properties["netLanguage"] = netLanguage;
             }
 
             // this gets called a lot - try/catch can be expensive so consider caching or something

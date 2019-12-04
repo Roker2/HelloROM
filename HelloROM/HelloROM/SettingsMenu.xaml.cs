@@ -108,6 +108,7 @@ namespace HelloROM
 
         private async void ChooseLanguage_Clicked(object sender, EventArgs e)
         {
+            App.Current.Properties["UseSystemLanguage"] = false;
             string actionSheet = await DisplayActionSheet("Choose language", "Cancel", null, "English", "Русский");
             switch (actionSheet)
             {
@@ -120,13 +121,14 @@ namespace HelloROM
                 default:
                     break;
             }
-            await DisplayAlert("Warning", "Please, restart program!", "OK");
+            await DisplayAlert(Utils.GetError("Warning"), Utils.GetTranslation("RestartProgram"), "OK");
         }
 
         private async void ResetLanguage_Clicked(object sender, EventArgs e)
         {
+            App.Current.Properties["UseSystemLanguage"] = true;
             App.Current.Properties.Remove("netLanguage");
-            await DisplayAlert("Warning", "Please, restart program!", "OK");
+            await DisplayAlert(Utils.GetError("Warning"), Utils.GetTranslation("RestartProgram"), "OK");
         }
     }
 }
