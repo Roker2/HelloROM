@@ -197,5 +197,20 @@
 "https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/2/Screenshot_20190217-190338_Settings.png",
 "https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/5/Screenshot_20190217-190352_Settings.png",
 "https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/6/Screenshot_20190217-190408_Settings.png",
-"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/7/Screenshot_20190217-190413_Settings.png"]}
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/7/Screenshot_20190217-190413_Settings.png"]},
+{"Name":"AICP",
+"Base":"Lineage OS",
+"Image":"https://avatars1.githubusercontent.com/u/5502699",
+"Description":"AICP is a customized version of Android that offers customizations and a clean UI Enviroment with different things to do. Originally started for the HTC Desire HD in 2012, and since then has evolved into a mature ROM with the BEST community that you can find. Until Lollipop, the Rom has always been based on AOKP, unfortunately since AOKP stopped development (but made a comeback later), we changed our base to CM. With the re-brand of CM to LineageOS (LOS) became LineageOS based with some tweaks from AOSP, and we are now based on GZOSP for Pie. If there are any bugs, either we will sort them out or the GZOSP team will if it concerns their code base. This rom isn't GZOSP supported, so no need to report errors/bugs to them!",
+"SiteUrl":"https://www.aicp-rom.com/",
+"GerritUrl":"https://gerrit.aicp-rom.com/",
+"GithubUrl":"https://github.com/AICP",
+"Screenshots":
+["https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/0/5/Screenshot_20191002-115350_Quickstep.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/0/7/Screenshot_20191002-115458_Aicp_Extras.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/0/9/Screenshot_20191002-115511_Quickstep.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/1/Screenshot_20191002-115552_Settings.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/5/Screenshot_20191002-120228_Aicp_Extras.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/7/Screenshot_20191002-120237_Settings.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/3/Screenshot_20191002-115604_Settings.png"]}
 ]
