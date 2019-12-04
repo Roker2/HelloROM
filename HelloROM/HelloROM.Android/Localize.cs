@@ -22,8 +22,7 @@ namespace HelloROM.Android
 			object netLanguage = "en";
             if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
             {
-                var androidLocale = Java.Util.Locale.Default;
-                netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
+                netLanguage = AndroidToDotnetLanguage(Java.Util.Locale.Default.ToString().Replace("_", "-"));
             }
 
             // this gets called a lot - try/catch can be expensive so consider caching or something
