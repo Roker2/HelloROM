@@ -127,7 +127,7 @@
     <value>Вы не указали базу.</value>
   </data>
   <data name="ErrorNoInternet" xml:space="preserve">
-    <value>Пожалуйста, вклчите интернет.</value>
+    <value>Пожалуйста, включите интернет.</value>
   </data>
   <data name="ErrorNoName" xml:space="preserve">
     <value>Вы не указали название.</value>
