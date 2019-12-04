@@ -182,5 +182,20 @@
 "https://github.com/Roker2/HelloROMScreenshots/raw/master/LiquidRemix/8.jpg",
 "https://github.com/Roker2/HelloROMScreenshots/raw/master/LiquidRemix/9.jpg",
 "https://github.com/Roker2/HelloROMScreenshots/raw/master/LiquidRemix/10.jpg",
-"https://github.com/Roker2/HelloROMScreenshots/raw/master/LiquidRemix/11.jpg"]}
+"https://github.com/Roker2/HelloROMScreenshots/raw/master/LiquidRemix/11.jpg"]},
+{"Name":"dotOS",
+"Base":"AOSP",
+"Image":"https://avatars2.githubusercontent.com/u/29705874",
+"Description":"DroidOnTime - is a custom Android firmware. It was launched with an aim to provide Unique user interface and Optimum performance that too keeping in mind the balance between performance and battery life. dotOS is based on Google's Android Open Source Project with Hand-picked goodies, innovative ideas and creative things which are added in the rom to enhance user experience!",
+"SiteUrl":"https://www.droidontime.com/",
+"GerritUrl":"http://gerrit.droidontime.com/",
+"GithubUrl":"https://github.com/dotos",
+"Screenshots":
+["https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/1/9/Screenshot_20190217-185951_Quickstep.jpg",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/0/Screenshot_20190217-185959_Quickstep.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/1/Screenshot_20190217-190006_Quickstep.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/2/Screenshot_20190217-190338_Settings.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/5/Screenshot_20190217-190352_Settings.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/6/Screenshot_20190217-190408_Settings.png",
+"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/7/Screenshot_20190217-190413_Settings.png"]}
 ]
