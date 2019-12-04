@@ -38,7 +38,7 @@
                 <TableSection Title="Language">
                     <ViewCell>
                         <controls:ExtendedButton x:Name="ChooseLanguage"
-                                Text="Choose language"
+                                Text="{i18n:Translate ChooseLanguage}"
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
@@ -48,7 +48,7 @@
                     </ViewCell>
                     <ViewCell>
                         <controls:ExtendedButton x:Name="ResetLanguage"
-                                Text="Use system language"
+                                Text="{i18n:Translate UseSystemLanguage}"
                                 TextColor="#757575"
                                 BorderWidth="0"
                                 BackgroundColor="Transparent"
