@@ -30,7 +30,7 @@ namespace HelloROM
             if (site != null)
             {
                 Button Button_Site = new Button();
-                make_button_style(Button_Site, Translations.Translation.Officialsite);
+                make_button_style(Button_Site, Utils.GetTranslation("Officialsite"));
                 Button_Site.Clicked += Button_Site_Clicked;
                 Buttons.Children.Add(Button_Site);
             }
