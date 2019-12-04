@@ -74,7 +74,7 @@ namespace HelloROM
             {
                 if (!App.Current.Properties.TryGetValue("json", out json))
                 {
-                    await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
+                    await DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorNoInternet"), "OK");
                     GetStat();
                     return;
                 }
@@ -99,7 +99,7 @@ namespace HelloROM
             App.Current.Properties["UseCustomJSON"] = false;
             if (!CrossConnectivity.Current.IsConnected)
             {
-                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
+                await DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorNoInternet"), "OK");
             }
             else
             {
@@ -139,7 +139,7 @@ namespace HelloROM
             object json = "";
             if (!App.Current.Properties.TryGetValue("json", out json))
             {
-                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoInternet, "OK");
+                await DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorNoInternet"), "OK");
                 return;
             }
             ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
@@ -153,7 +153,7 @@ namespace HelloROM
             object json;
             if (!App.Current.Properties.TryGetValue("json", out json))
             {
-                await DisplayAlert(Translations.Errors.Error, "json doesn't exist", "OK");
+                await DisplayAlert(Utils.GetError("Error"), "json doesn't exist", "OK");
                 return;
             }
             GetStat();

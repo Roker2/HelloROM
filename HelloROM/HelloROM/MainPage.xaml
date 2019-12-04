@@ -16,7 +16,7 @@
                      Priority="1"
                      Clicked="ToolbarItem_Clicked_1"/>
         <ToolbarItem Order="Secondary"
-                     Text="About program"
+                     Text="{i18n:Translate AboutProgram}" 
                      Priority="2"
                      Clicked="ToolbarItem_Clicked_2"/>
     </ContentPage.ToolbarItems>
