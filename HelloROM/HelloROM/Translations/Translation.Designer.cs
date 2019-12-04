@@ -61,6 +61,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на About program.
+        /// </summary>
+        internal static string AboutProgram {
+            get {
+                return ResourceManager.GetString("AboutProgram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Add ROM.
         /// </summary>
         internal static string AddROM {
