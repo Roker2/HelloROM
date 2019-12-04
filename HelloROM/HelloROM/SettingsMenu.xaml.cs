@@ -47,10 +47,10 @@ namespace HelloROM
             switch ((SortTypes)objSortType)
             {
                 case SortTypes.Name:
-                    SortTypeButton.Text = Translations.Translation.NameSort;
+                    SortTypeButton.Text = Utils.GetTranslation("NameSort");
                     break;
                 case SortTypes.Base:
-                    SortTypeButton.Text = Translations.Translation.BaseSort;
+                    SortTypeButton.Text = Utils.GetTranslation("BaseSort");
                     break;
                 default:
                     break;
@@ -69,11 +69,11 @@ namespace HelloROM
             {
                 case "Name":
                     App.Current.Properties["SortType"] = SortTypes.Name;
-                    SortTypeButton.Text = "Sort by name";
+                    SortTypeButton.Text = Utils.GetTranslation("NameSort");
                     break;
                 case "Base":
                     App.Current.Properties["SortType"] = SortTypes.Base;
-                    SortTypeButton.Text = "Sort by base";
+                    SortTypeButton.Text = Utils.GetTranslation("BaseSort");
                     break;
                 default:
                     break;
