@@ -6,26 +6,28 @@ namespace HelloROM
 {
     public static class Utils
     {
-        public static string GetTranslation(string name)
+        static string GetLanguage()
         {
             object netLanguage;
             if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
             {
-                netLanguage = "en";
+                return "en";
             }
+            return (string)netLanguage;
+        }
+
+        public static string GetTranslation(string name)
+        {
+            string netLanguage = GetLanguage();
             ResourceManager rm = new ResourceManager("HelloROM.Translations.Translation", typeof(Translations.Translation).Assembly);
-            return rm.GetString(name, new System.Globalization.CultureInfo((string)netLanguage));
+            return rm.GetString(name, new System.Globalization.CultureInfo(netLanguage));
         }
 
         public static string GetError(string name)
         {
-            object netLanguage;
-            if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
-            {
-                netLanguage = "en";
-            }
+            string netLanguage = GetLanguage();
             ResourceManager rm = new ResourceManager("HelloROM.Translations.Errors", typeof(Translations.Translation).Assembly);
-            return rm.GetString(name, new System.Globalization.CultureInfo((string)netLanguage));
+            return rm.GetString(name, new System.Globalization.CultureInfo(netLanguage));
         }
     }
 }
