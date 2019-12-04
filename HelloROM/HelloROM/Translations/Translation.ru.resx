@@ -188,4 +188,7 @@
   <data name="UseSystemLanguage" xml:space="preserve">
     <value>Использовать язык системы</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
 </root>

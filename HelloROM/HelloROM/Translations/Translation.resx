@@ -188,4 +188,7 @@
   <data name="UseSystemLanguage" xml:space="preserve">
     <value>Use system language</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
 </root>
