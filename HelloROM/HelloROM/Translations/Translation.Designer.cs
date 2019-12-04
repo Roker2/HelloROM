@@ -115,6 +115,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Choose sort type.
+        /// </summary>
+        internal static string ChooseSortType {
+            get {
+                return ResourceManager.GetString("ChooseSortType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Data.
         /// </summary>
         internal static string Data {

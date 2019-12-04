@@ -191,6 +191,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="ChooseSortType" xml:space="preserve">
+    <value>Choose sort type</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Language</value>
   </data>
