@@ -35,7 +35,7 @@
                                 Clicked="CustomJSONFile_Clicked"/>
                     </ViewCell>
                 </TableSection>
-                <TableSection Title="Language">
+                <TableSection Title="{i18n:Translate Language}">
                     <ViewCell>
                         <controls:ExtendedButton x:Name="ChooseLanguage"
                                 Text="{i18n:Translate ChooseLanguage}"

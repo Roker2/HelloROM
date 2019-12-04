@@ -64,7 +64,7 @@ namespace HelloROM
 
         private async void SortTypeButton_Clicked(object sender, EventArgs e)
         {
-            string actionSheet = await DisplayActionSheet("Choose sort type", "Cancel", null, "Name", "Base");
+            string actionSheet = await DisplayActionSheet(Utils.GetTranslation("ChooseSortType"), Utils.GetTranslation("Cancel"), null, Utils.GetTranslation("Name"), Utils.GetTranslation("Base"));
             switch (actionSheet)
             {
                 case "Name":
@@ -87,7 +87,7 @@ namespace HelloROM
                 return;
             if (!fileData.FilePath.Contains(".json"))
             {
-                await DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorIsNotJSON, "OK");
+                await DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorIsNotJSON"), "OK");
                 return;
             }
             string json = "";
@@ -109,7 +109,7 @@ namespace HelloROM
         private async void ChooseLanguage_Clicked(object sender, EventArgs e)
         {
             App.Current.Properties["UseSystemLanguage"] = false;
-            string actionSheet = await DisplayActionSheet("Choose language", "Cancel", null, "English", "Русский");
+            string actionSheet = await DisplayActionSheet(Utils.GetTranslation("ChooseLanguage"), Utils.GetTranslation("Cancel"), null, "English", "Русский");
             switch (actionSheet)
             {
                 case "English":
