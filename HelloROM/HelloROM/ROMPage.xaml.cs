@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Resources;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,8 +30,14 @@ namespace HelloROM
 
             if (site != null)
             {
+                object netLanguage;
+                if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
+                {
+                    netLanguage = "en";
+                }
                 Button Button_Site = new Button();
-                make_button_style(Button_Site, Translations.Translation.Officialsite);
+                ResourceManager rm = new ResourceManager("HelloROM.Translations.Translation", typeof(Translations.Translation).Assembly);
+                make_button_style(Button_Site, rm.GetString("Officialsite", new System.Globalization.CultureInfo((string)netLanguage)));
                 Button_Site.Clicked += Button_Site_Clicked;
                 Buttons.Children.Add(Button_Site);
             }
