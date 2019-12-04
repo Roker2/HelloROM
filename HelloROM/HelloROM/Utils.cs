@@ -16,5 +16,16 @@ namespace HelloROM
             ResourceManager rm = new ResourceManager("HelloROM.Translations.Translation", typeof(Translations.Translation).Assembly);
             return rm.GetString(name, new System.Globalization.CultureInfo((string)netLanguage));
         }
+
+        public static string GetError(string name)
+        {
+            object netLanguage;
+            if (!App.Current.Properties.TryGetValue("netLanguage", out netLanguage))
+            {
+                netLanguage = "en";
+            }
+            ResourceManager rm = new ResourceManager("HelloROM.Translations.Errors", typeof(Translations.Translation).Assembly);
+            return rm.GetString(name, new System.Globalization.CultureInfo((string)netLanguage));
+        }
     }
 }
