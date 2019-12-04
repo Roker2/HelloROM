@@ -57,7 +57,7 @@ namespace HelloROM
             await Share.RequestAsync(new ShareTextRequest
             {
                 Text = text,
-                Title = Translations.Translation.ShareJSON
+                Title = Utils.GetTranslation("ShareJSON")
             });
         }
 
@@ -80,22 +80,22 @@ namespace HelloROM
         {
             if (string.IsNullOrEmpty(ROMName.Text))
             {
-                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoName, "OK");
+                DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorNoName"), "OK");
                 return false;
             }
             if (string.IsNullOrEmpty(ROMBase.Text))
             {
-                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoBase, "OK");
+                DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorNoBase"), "OK");
                 return false;
             }
             if ((ScreensNumber == 0))
             {
-                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoScreenshots, "OK");
+                DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorNoScreenshots"), "OK");
                 return false;
             }
             if (!CheckScreenshots())
             {
-                DisplayAlert(Translations.Errors.Error, Translations.Errors.ErrorNoOneOrMoreScreenshots, "OK");
+                DisplayAlert(Utils.GetError("Error"), Utils.GetError("ErrorNoOneOrMoreScreenshots"), "OK");
                 return false;
             }
             return true;
