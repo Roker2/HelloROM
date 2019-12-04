@@ -179,4 +179,13 @@
   <data name="UseCustomJSON" xml:space="preserve">
     <value>Использовать кастомный каталог из файла</value>
   </data>
+  <data name="ChooseLanguage" xml:space="preserve">
+    <value>Выберите язык</value>
+  </data>
+  <data name="RestartProgram" xml:space="preserve">
+    <value>Пожалуйста, перезапустите программу!</value>
+  </data>
+  <data name="UseSystemLanguage" xml:space="preserve">
+    <value>Использовать язык системы</value>
+  </data>
 </root>

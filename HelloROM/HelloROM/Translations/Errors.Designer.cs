@@ -122,5 +122,14 @@ namespace HelloROM.Translations {
                 return ResourceManager.GetString("ErrorNoScreenshots", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Warning.
+        /// </summary>
+        internal static string Warning {
+            get {
+                return ResourceManager.GetString("Warning", resourceCulture);
+            }
+        }
     }
 }

@@ -138,4 +138,7 @@
   <data name="ErrorNoScreenshots" xml:space="preserve">
     <value>You didn't add screenshots.</value>
   </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
 </root>

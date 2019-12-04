@@ -97,6 +97,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Choose language.
+        /// </summary>
+        internal static string ChooseLanguage {
+            get {
+                return ResourceManager.GetString("ChooseLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Data.
         /// </summary>
         internal static string Data {
@@ -169,6 +178,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Please, restart program!.
+        /// </summary>
+        internal static string RestartProgram {
+            get {
+                return ResourceManager.GetString("RestartProgram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на ROM Information.
         /// </summary>
         internal static string ROMInformation {
@@ -237,6 +255,15 @@ namespace HelloROM.Translations {
         internal static string UseCustomJSON {
             get {
                 return ResourceManager.GetString("UseCustomJSON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Use system language.
+        /// </summary>
+        internal static string UseSystemLanguage {
+            get {
+                return ResourceManager.GetString("UseSystemLanguage", resourceCulture);
             }
         }
     }

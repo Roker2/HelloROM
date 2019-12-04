@@ -179,4 +179,13 @@
   <data name="UseCustomJSON" xml:space="preserve">
     <value>Use custom catalog from file</value>
   </data>
+  <data name="ChooseLanguage" xml:space="preserve">
+    <value>Choose language</value>
+  </data>
+  <data name="RestartProgram" xml:space="preserve">
+    <value>Please, restart program!</value>
+  </data>
+  <data name="UseSystemLanguage" xml:space="preserve">
+    <value>Use system language</value>
+  </data>
 </root>

@@ -138,4 +138,7 @@
   <data name="ErrorNoScreenshots" xml:space="preserve">
     <value>Вы не добавили снимки экрана.</value>
   </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
 </root>
