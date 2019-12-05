@@ -144,7 +144,7 @@ namespace HelloROM
             }
             ROMs temp = new ROMs(JsonConvert.DeserializeObject<List<ROM>>((string)json));
             temp.SortByName();
-            ROMList.ItemsSource = temp.Where(x => x.Name.ToLowerInvariant().StartsWith(e.NewTextValue.ToLowerInvariant()));
+            ROMList.ItemsSource = temp.Where(x => x.Name.ToLowerInvariant().Contains(e.NewTextValue.ToLowerInvariant()));
         }
 
         private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
