@@ -34,5 +34,10 @@ namespace HelloROM
         {
             Device.OpenUri(new Uri("https://github.com/Roker2/HelloROM"));
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+
+        }
     }
 }

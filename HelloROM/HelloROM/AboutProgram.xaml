@@ -25,7 +25,11 @@ You can find ROM info, sreenshots."
                             Clicked="Button_Clicked"
                             BackgroundColor="White"/>
                     <Label Text="Developer: Dmitry Minko (Roker2)"
-                       Margin="5, 0, 0, 0"/>
+                       Margin="5, 0, 0, 0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                     <Label Text="Thanks all my friends. They sended many screenshots, they helped me. Thank you!"
                        Margin="5, 0, 0, 0"/>
                 </StackLayout>
