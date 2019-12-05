@@ -73,12 +73,6 @@ namespace HelloROM.Android
 			//certain languages need to be converted to CultureInfo equivalent
 			switch (androidLanguage)
 			{
-				case "in-ID":  // "Indonesian (Indonesia)" has different code in  .NET 
-					netLanguage = "id-ID"; // correct code for .NET
-					break;
-				case "gsw-CH":  // "Schwiizertüütsch (Swiss German)" not supported .NET culture
-					netLanguage = "de-CH"; // closest supported
-					break;
                 case "ru":
                 case "ru-BY":
                 case "ru-KG":
