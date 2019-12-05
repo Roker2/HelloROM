@@ -403,5 +403,18 @@
 "https://i.imgur.com/m0jJIhp.png",
 "https://i.imgur.com/Oow0gOg.png",
 "https://i.imgur.com/1uubhjE.png",
-"https://i.imgur.com/ow22pW1.png"]}
+"https://i.imgur.com/ow22pW1.png"]},
+{"Name":"SlimRoms",
+"Base":"AOSP",
+"Image":"https://avatars1.githubusercontent.com/u/2158052",
+"Description":"Our main goal is to offer users a slimmed down but still feature rich alternative to other android operating systems. The entire team work together to bring you this tailor-made beauty straight from AOSP source code.",
+"SiteUrl":"https://slimroms.org/",
+"GithubUrl":"https://github.com/SlimRoms",
+"Screenshots":
+["https://img.xda-cdn.com/CP1a2QROu9r9fXEjsT3JdQ3Qli8=/https%3A%2F%2Fuploads.tapatalk-cdn.com%2F20170403%2F678ae459916c24df6b4adc2ddca96a81.jpg",
+"https://img.xda-cdn.com/PGqNtUXrVesRFgNyaoLYHqdIG7M=/https%3A%2F%2Fuploads.tapatalk-cdn.com%2F20170403%2F0ceaa4919c38dae35abd2f874bd0bada.jpg",
+"https://img.xda-cdn.com/_EYt6bE7oGlh1FX8Sa92tljg-RI=/https%3A%2F%2Fuploads.tapatalk-cdn.com%2F20170403%2Ff40db8bfa2250bc4329db88df3a09466.jpg",
+"https://img.xda-cdn.com/FHk8vpSiHbzBCK6XqFXsETcAylg=/https%3A%2F%2Fuploads.tapatalk-cdn.com%2F20170403%2F3b049003356e8fdcc4b32f957033730a.jpg",
+"https://img.xda-cdn.com/LoPSckXfi4IMD4M2uMuuEwEuwrs=/https%3A%2F%2Fuploads.tapatalk-cdn.com%2F20170402%2Ff232971c71b1d1c1a3f046a46e919eb6.jpg",
+"https://img.xda-cdn.com/kdA2HKfBiTp753SCQzKe-6M14Mk=/https%3A%2F%2Fuploads.tapatalk-cdn.com%2F20170403%2Fac8367d18760faf6a38c14d3ea79b105.jpg"]}
 ]
