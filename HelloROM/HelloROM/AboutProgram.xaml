@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloROM.AboutProgram"
-             Title="About program">
+             xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM"
+             Title="{i18n:Translate AboutProgram}" >
     <ContentPage.Content>
         <ScrollView>
             <StackLayout HorizontalOptions="CenterAndExpand">
@@ -11,27 +12,26 @@
                        FontSize="30"
                        HorizontalOptions="Center"/>
                 <Label x:Name="Info"
-                       Text="Hello Android user! It is catalog of custom ROMs. Can not you find the best ROM or do you not find good ROM for your device? This catalog for you!
-You can find ROM info, sreenshots."
+                       Text="{i18n:Translate ProgramInfo}"
                        Margin="5, 0, 0, 0">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" NumberOfTapsRequired="2"/>
                     </Label.GestureRecognizers>
                 </Label>
                 <StackLayout HorizontalOptions="Start">
-                    <Button Text="Sources repository"
+                    <Button Text="{i18n:Translate SourcesRepository}"
                             Clicked="Button_Clicked_1"
                             BackgroundColor="White"/>
-                    <Button Text="Screenshots repository"
+                    <Button Text="{i18n:Translate ScreenshotsRepository}"
                             Clicked="Button_Clicked"
                             BackgroundColor="White"/>
-                    <Label Text="Developer: Dmitry Minko (Roker2)"
+                    <Label Text="{i18n:Translate ItIsMe}"
                        Margin="5, 0, 0, 0">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
                         </Label.GestureRecognizers>
                     </Label>
-                    <Label Text="Thanks all my friends. They sended many screenshots, they helped me. Thank you!"
+                    <Label Text="{i18n:Translate Thanks}"
                        Margin="5, 0, 0, 0"/>
                 </StackLayout>
             </StackLayout>
