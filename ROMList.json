@@ -236,5 +236,19 @@
 "https://aospextended.com/static/media/gallery_13.5066601c.png",
 "https://aospextended.com/static/media/gallery_14.adfd369a.png",
 "https://aospextended.com/static/media/gallery_15.5e2dcd15.png",
-"https://aospextended.com/static/media/gallery_16.90da411b.png"]}
+"https://aospextended.com/static/media/gallery_16.90da411b.png"]},
+{"Name":"Paranoid Android",
+"Base":"AOSP",
+"Image":"https://avatars2.githubusercontent.com/u/5701347",
+"Description":"Paranoid Android is a custom ROM aiming to extend the system, working on enhancing the already existing beauty of Android and following the same design philosophies that were set forward by Google for Android Open Source Project.",
+"SiteUrl":"http://aospa.co/",
+"GithubUrl":"https://github.com/AOSPA",
+"Screenshots":
+["https://2.bp.blogspot.com/-fZMvZxtTuxY/XM3uWVKPR8I/AAAAAAAAKn4/_ft4-1_ieAkRoMn0j_6D6spEBRB0QUrJgCLcBGAs/s1920/Screenshot_20190504-202441.png",
+"https://1.bp.blogspot.com/-oBL1O4SyM0w/XM3uWmxefBI/AAAAAAAAKn0/4zKqL_tbwm8Jz3pxyI8Uff5JXf4_yp__ACLcBGAs/s1920/Screenshot_20190504-202453.png",
+"https://1.bp.blogspot.com/-DqChTBapa5I/XM3uZTqYzII/AAAAAAAAKoQ/XoHoIDzYnuIIZXHuMocKPvzd8mi-ZQrfQCLcBGAs/s1920/Screenshot_20190504-204331.png",
+"https://4.bp.blogspot.com/-HKflk9-YK9U/XM3uX_qLSeI/AAAAAAAAKoE/6yzv2WbkcMclFAnmxDlFkqytkLx460OZQCLcBGAs/s1920/Screenshot_20190504-203322.png",
+"https://2.bp.blogspot.com/-cyB09MSJqWY/XM3uYCjH_bI/AAAAAAAAKoI/fyRoQQN1w882FZRkTeTUgdARwSOsma6NQCLcBGAs/s1920/Screenshot_20190504-203330.png",
+"https://2.bp.blogspot.com/-zvLL5vGEOAw/XM3uXmigQgI/AAAAAAAAKoA/i-Wlp1zJ5v0MqZ0GbBZl1jTVrk7M15w_ACLcBGAs/s1920/Screenshot_20190504-203254.png",
+"https://1.bp.blogspot.com/-4TPl2-5TebQ/XM3uW5pl1fI/AAAAAAAAKn8/E2hClLuNN9MNUJqJr1V6ueWvTbCaAhOpACLcBGAs/s1920/Screenshot_20190504-203238.png"]}
 ]
