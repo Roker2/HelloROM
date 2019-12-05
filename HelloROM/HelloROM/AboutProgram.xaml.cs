@@ -35,7 +35,14 @@ namespace HelloROM
             Device.OpenUri(new Uri("https://github.com/Roker2/HelloROM"));
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Logo.Source = "Roker2.jpg";
+            TapGesture.Tapped -= TapGestureRecognizer_Tapped;
+            TapGesture.Tapped += TapGestureRecognizer_Tapped_Second;
+        }
+
+        private async void TapGestureRecognizer_Tapped_Second(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new EasterEgg());
         }

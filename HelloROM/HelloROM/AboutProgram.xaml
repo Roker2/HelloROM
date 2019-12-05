@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloROM.AboutProgram"
              xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM"
-             Title="{i18n:Translate AboutProgram}" >
+             Title="{i18n:Translate AboutProgram}">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout HorizontalOptions="CenterAndExpand">
-                <Image Source="program_icon.png" HeightRequest="100" WidthRequest="100" VerticalOptions="Start"/>
+                <Image x:Name="Logo" Source="program_icon.png" HeightRequest="100" WidthRequest="100" VerticalOptions="Start"/>
                 <Label Text="HelloROM" 
                        FontSize="30"
                        HorizontalOptions="Center"/>
@@ -28,7 +28,7 @@
                     <Label Text="{i18n:Translate ItIsMe}"
                        Margin="5, 0, 0, 0">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
+                            <TapGestureRecognizer x:Name="TapGesture" Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
                         </Label.GestureRecognizers>
                     </Label>
                     <Label Text="{i18n:Translate Thanks}"
