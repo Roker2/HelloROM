@@ -200,4 +200,20 @@
   <data name="Language" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="ItIsMe" xml:space="preserve">
+    <value>Developer: Dmitry Minko (Roker2)</value>
+  </data>
+  <data name="ProgramInfo" xml:space="preserve">
+    <value>Hello Android user! It is catalog of custom ROMs. Can not you find the best ROM or do you not find good ROM for your device? This catalog for you!
+You can find ROM info, sreenshots.</value>
+  </data>
+  <data name="ScreenshotsRepository" xml:space="preserve">
+    <value>Screenshots repository</value>
+  </data>
+  <data name="SourcesRepository" xml:space="preserve">
+    <value>Sources repository</value>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Thanks all my friends. They sended many screenshots, they helped me. Thank you!</value>
+  </data>
 </root>

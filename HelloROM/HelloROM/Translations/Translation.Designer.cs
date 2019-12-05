@@ -160,6 +160,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Developer: Dmitry Minko (Roker2).
+        /// </summary>
+        internal static string ItIsMe {
+            get {
+                return ResourceManager.GetString("ItIsMe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Language.
         /// </summary>
         internal static string Language {
@@ -214,6 +223,16 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Hello Android user! It is catalog of custom ROMs. Can not you find the best ROM or do you not find good ROM for your device? This catalog for you!
+        ///You can find ROM info, sreenshots..
+        /// </summary>
+        internal static string ProgramInfo {
+            get {
+                return ResourceManager.GetString("ProgramInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Please, restart program!.
         /// </summary>
         internal static string RestartProgram {
@@ -250,6 +269,15 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Screenshots repository.
+        /// </summary>
+        internal static string ScreenshotsRepository {
+            get {
+                return ResourceManager.GetString("ScreenshotsRepository", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Search.
         /// </summary>
         internal static string Search {
@@ -273,6 +301,24 @@ namespace HelloROM.Translations {
         internal static string ShareJSON {
             get {
                 return ResourceManager.GetString("ShareJSON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sources repository.
+        /// </summary>
+        internal static string SourcesRepository {
+            get {
+                return ResourceManager.GetString("SourcesRepository", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Thanks all my friends. They sended many screenshots, they helped me. Thank you!.
+        /// </summary>
+        internal static string Thanks {
+            get {
+                return ResourceManager.GetString("Thanks", resourceCulture);
             }
         }
         

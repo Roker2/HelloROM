@@ -200,4 +200,20 @@
   <data name="Language" xml:space="preserve">
     <value>Язык</value>
   </data>
+  <data name="ItIsMe" xml:space="preserve">
+    <value>Разработчик: Дмитрий Минько (Roker2)</value>
+  </data>
+  <data name="ProgramInfo" xml:space="preserve">
+    <value>Привет, Android-пользователь! Это каталог кастомных прошивок. Не можете найти лучшую прошивку или ищите хорошую прошивку для вашего устройства? Этот каталог для Вас!
+Вы можете найти скриншоты прошивок и информацию о них.</value>
+  </data>
+  <data name="ScreenshotsRepository" xml:space="preserve">
+    <value>Репозиторий снимков экрана</value>
+  </data>
+  <data name="SourcesRepository" xml:space="preserve">
+    <value>Репозиторий исходных кодов</value>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Спасибо всем моим друзьям. Они делились снимками экрана, они помогали мне. Спасибо вам!</value>
+  </data>
 </root>
