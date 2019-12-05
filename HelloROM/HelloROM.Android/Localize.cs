@@ -79,6 +79,18 @@ namespace HelloROM.Android
 				case "gsw-CH":  // "Schwiizertüütsch (Swiss German)" not supported .NET culture
 					netLanguage = "de-CH"; // closest supported
 					break;
+                case "ru":
+                case "ru-BY":
+                case "ru-KG":
+                case "ru-KZ":
+                case "ru-MD":
+                case "ru-RU":
+                case "ru-UA":
+                    netLanguage = "ru";
+                    break;
+                default:
+                    netLanguage = "en";
+                    break;
 					// add more application-specific cases here (if required)
 					// ONLY use cultures that have been tested and known to work
 			}
