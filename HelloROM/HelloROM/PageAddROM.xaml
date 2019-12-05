@@ -41,6 +41,10 @@
                             Text="{i18n:Translate ShareJSON}"
                             Clicked="SaveToJSON_Clicked"
                             BackgroundColor="White"/>
+                    <Button x:Name="CopyToClipboard"
+                            Text="{i18n:Translate CopyToClipboard}"
+                            Clicked="CopyToClipboard_Clicked"
+                            BackgroundColor="White"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

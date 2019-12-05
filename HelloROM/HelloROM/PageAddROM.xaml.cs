@@ -122,5 +122,27 @@ namespace HelloROM
             }
             ShareText(rOM.ToJSON());
         }
+
+        private void CopyToClipboard_Clicked(object sender, EventArgs e)
+        {
+            if (!IsOkay())
+                return;
+            ROM rOM = new ROM { Name = ROMName.Text, Base = ROMBase.Text };
+            if (!string.IsNullOrEmpty(PicURL.Text))
+                rOM.Image = PicURL.Text;
+            if (!string.IsNullOrEmpty(ROMDescription.Text))
+                rOM.Description = ROMDescription.Text;
+            if (!string.IsNullOrEmpty(ROMSite.Text))
+                rOM.SiteUrl = ROMSite.Text;
+            if (!string.IsNullOrEmpty(ROMGerrit.Text))
+                rOM.GerritUrl = ROMGerrit.Text;
+            if (!string.IsNullOrEmpty(ROMGithub.Text))
+                rOM.GithubUrl = ROMGithub.Text;
+            for (int i = 0; i < entryMass.Count; i++)
+            {
+                rOM.AddScreenshot(entryMass[i].Text);
+            }
+            Clipboard.SetTextAsync(rOM.ToJSON());
+        }
     }
 }
