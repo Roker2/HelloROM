@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddROM" xml:space="preserve">
-    <value>Add ROM</value>
+    <value>Generate ROM</value>
   </data>
   <data name="Base" xml:space="preserve">
     <value>Base</value>
@@ -215,5 +215,8 @@ You can find ROM info, sreenshots.</value>
   </data>
   <data name="Thanks" xml:space="preserve">
     <value>Thanks all my friends. They sended many screenshots, they helped me. Thank you!</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copy to clipboard</value>
   </data>
 </root>

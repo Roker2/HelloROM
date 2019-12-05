@@ -70,7 +70,7 @@ namespace HelloROM.Translations {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Add ROM.
+        ///   Ищет локализованную строку, похожую на Generate ROM.
         /// </summary>
         internal static string AddROM {
             get {
@@ -129,6 +129,15 @@ namespace HelloROM.Translations {
         internal static string ChooseSortType {
             get {
                 return ResourceManager.GetString("ChooseSortType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Copy to clipboard.
+        /// </summary>
+        internal static string CopyToClipboard {
+            get {
+                return ResourceManager.GetString("CopyToClipboard", resourceCulture);
             }
         }
         
