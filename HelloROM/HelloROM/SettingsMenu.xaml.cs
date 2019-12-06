@@ -110,14 +110,15 @@ namespace HelloROM
             {
                 case "English":
                     App.Current.Properties["netLanguage"] = "en";
+                    await DisplayAlert(Utils.GetError("Warning"), Utils.GetTranslation("RestartProgram"), "OK");
                     break;
                 case "Русский":
                     App.Current.Properties["netLanguage"] = "ru";
+                    await DisplayAlert(Utils.GetError("Warning"), Utils.GetTranslation("RestartProgram"), "OK");
                     break;
                 default:
                     break;
             }
-            await DisplayAlert(Utils.GetError("Warning"), Utils.GetTranslation("RestartProgram"), "OK");
         }
 
         private async void ResetLanguage_Clicked(object sender, EventArgs e)
