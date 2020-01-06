@@ -3,9 +3,9 @@ using Xamarin.Forms;
 using System.Threading;
 using System.Globalization;
 
-[assembly:Dependency(typeof(HelloROM.Android.Localize))]
+[assembly:Dependency(typeof(HelloROM.Droid.Localize))]
 
-namespace HelloROM.Android
+namespace HelloROM.Droid
 {
 	public class Localize : HelloROM.ILocalize
 	{

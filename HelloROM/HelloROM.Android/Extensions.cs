@@ -26,7 +26,7 @@ using Android.Graphics;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-namespace HelloROM.Android
+namespace HelloROM.Droid
 {
     /// <summary>
     /// Interface of TypefaceCaches

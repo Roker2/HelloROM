@@ -23,11 +23,11 @@ using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using HelloROM;
-using HelloROM.Android;
+using HelloROM.Droid;
 
 [assembly: ExportRenderer(typeof(ExtendedButton), typeof(ExtendedButtonRenderer))]
 
-namespace HelloROM.Android
+namespace HelloROM.Droid
 {
     /// <summary>
     /// Class ExtendedButtonRenderer.

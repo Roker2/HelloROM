@@ -23,7 +23,7 @@ using System;
 using Android.Views;
 using TextAlignment = Xamarin.Forms.TextAlignment;
 
-namespace HelloROM.Android
+namespace HelloROM.Droid
 {
     using DroidTextAlignment = global::Android.Views.TextAlignment;
 
