@@ -14,12 +14,6 @@ namespace HelloROM
         public MainPage()
         {
             InitializeComponent();
-            AdmobControl admobControl = new AdmobControl()
-            {
-                AdUnitId = "ca-app-pub-7279205474652160/2476783438"
-            };
-            ROMView.Children.Add(admobControl);
-            DependencyService.Get<IAdmobInterstitialAds>().Display("ca-app-pub-7279205474652160/2476783438");
         }
 
         protected override void OnAppearing()
