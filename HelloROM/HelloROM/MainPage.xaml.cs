@@ -16,6 +16,9 @@ namespace HelloROM
         public MainPage()
         {
             InitializeComponent();
+#if DEBUG
+            CrossMTAdmob.Current.TestDevices = new List<string>() { "7d597d111dd8c64e" }; //.Add("7d597d111dd8c64e");
+#endif
         }
 
         protected override void OnAppearing()
