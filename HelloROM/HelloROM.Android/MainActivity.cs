@@ -27,6 +27,9 @@ namespace HelloROM.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-7279205474652160~2424812542");
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+#if DEBUG
+            Console.WriteLine("DeviceID: " + Android.Provider.Settings.Secure.GetString(Android.App.Application.Context.ContentResolver, Android.Provider.Settings.Secure.AndroidId));
+#endif
             LoadApplication(new App());
         }
     }
