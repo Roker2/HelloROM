@@ -6,6 +6,8 @@ using System.Net.Http;
 using Xamarin.Forms;
 using Newtonsoft.Json;
 using Plugin.Connectivity;
+using MarcTron.Plugin;
+using MarcTron.Plugin.Controls;
 
 namespace HelloROM
 {
@@ -87,6 +89,8 @@ namespace HelloROM
             IsBusy = false;
             ROMView.Children.Remove(IsDownloadJSON);
             SetItemsSource((string)json);
+            CrossMTAdmob.Current.LoadRewardedVideo("ca-app-pub-7279205474652160/5543506887");
+            CrossMTAdmob.Current.ShowRewardedVideo();
         }
 
         private async void UpdateStat()

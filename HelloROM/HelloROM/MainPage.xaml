@@ -6,6 +6,7 @@
              xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              x:Class="HelloROM.MainPage"
              xmlns:i18n="clr-namespace:HelloROM;assembly=HelloROM"
+             xmlns:controls="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
              Title="HelloROM">
     <ContentPage.ToolbarItems>
         <ToolbarItem Order="Secondary" 
@@ -60,6 +61,9 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <controls:MTAdView AdsId="ca-app-pub-7279205474652160/2476783438" IsVisible="True" HeightRequest="90">
+            
+        </controls:MTAdView>
     </StackLayout>
 
 </ContentPage>
