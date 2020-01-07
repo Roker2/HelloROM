@@ -2,6 +2,7 @@
 
 using Android.App;
 using Android.Content.PM;
+using Android.Gms.Ads;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -24,6 +25,7 @@ namespace HelloROM.Droid
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            MobileAds.Initialize(ApplicationContext, "ca-app-pub-7279205474652160~2424812542");
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
