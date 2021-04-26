@@ -236,13 +236,18 @@
 	"SiteUrl": "https://www.aicp-rom.com/",
 	"GerritUrl": "https://gerrit.aicp-rom.com/",
 	"GithubUrl": "https://github.com/AICP",
-	"Screenshots": ["https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/0/5/Screenshot_20191002-115350_Quickstep.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/0/7/Screenshot_20191002-115458_Aicp_Extras.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/0/9/Screenshot_20191002-115511_Quickstep.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/1/Screenshot_20191002-115552_Settings.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/5/Screenshot_20191002-120228_Aicp_Extras.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/7/Screenshot_20191002-120237_Settings.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/8/3/3/4/1/3/Screenshot_20191002-115604_Settings.png"
+	"Screenshots": ["https://forum.xda-developers.com/attachments/screenshot_20190325-061319_lawnchair-png.4730512/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061408_google_play_store-jpg.4730513/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061413_google_play_store-png.4730514/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061430_google_play_store-png.4730515/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061454_settings-png.4730516/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061509_aicp_extras-png.4730517/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061514_aicp_extras-png.4730518/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061533_aicp_extras-png.4730519/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-061547_aicp_extras-png.4730520/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-062035_aicp_extras-png.4730521/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190325-062112_aicp_extras-png.4730522/",
+		"https://forum.xda-developers.com/attachments/screenshot_20190324-203253_settings-png.4730523/"
 	]
 },
 {
