@@ -216,13 +216,16 @@
 	"SiteUrl": "https://www.droidontime.com/",
 	"GerritUrl": "http://gerrit.droidontime.com/",
 	"GithubUrl": "https://github.com/dotos",
-	"Screenshots": ["https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/1/9/Screenshot_20190217-185951_Quickstep.jpg",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/0/Screenshot_20190217-185959_Quickstep.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/1/Screenshot_20190217-190006_Quickstep.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/2/Screenshot_20190217-190338_Settings.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/5/Screenshot_20190217-190352_Settings.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/6/Screenshot_20190217-190408_Settings.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/7/0/9/7/2/7/Screenshot_20190217-190413_Settings.png"
+	"Screenshots": ["https://www.xda-developers.com/files/2021/04/MonetWannabe-Default.jpeg",
+		"https://www.xda-developers.com/files/2021/04/MonetWannabe-Default-2.jpg",
+		"https://www.xda-developers.com/files/2021/04/MonetWannabe-Default-3.jpg",
+		"https://www.xda-developers.com/files/2021/04/MonetWannabe-Orangeish.jpg",
+		"https://www.xda-developers.com/files/2021/04/MonetWannabe-Orangeish-2.jpg",
+		"https://www.xda-developers.com/files/2021/04/MonetWannabe-Orangeish-3.jpg",
+		"https://www.xda-developers.com/files/2021/04/MonetWannabe-Orangeish-4.jpg",
+		"https://www.xda-developers.com/files/2021/04/NewPackageInstalelr1.jpg",
+		"https://www.xda-developers.com/files/2021/04/NewPackageInstalelr2.jpg",
+		"https://www.xda-developers.com/files/2021/04/NewPackageInstalelr3.jpg",
 	]
 },
 {
