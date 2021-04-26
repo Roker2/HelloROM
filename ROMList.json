@@ -377,7 +377,7 @@
 	"Base": "AOSP",
 	"Image": "https://descendant.me/assets/avatar.png",
 	"Description": "Descendant is a different take on Android that aims to revolutionize Google’s Android AOSP experience.\nFounded in 2018, leaded by Dil3mm4, Descendant it’s an OS that can be installed on various platforms.",
-	"SiteUrl": "https://descendant.me/",
+	"SiteUrl": "https://descendant.me",
 	"GithubUrl": "https://github.com/Descendant",
 	"Screenshots": ["https://github.com/Roker2/HelloROMScreenshots/raw/master/Descendant/1.png",
 		"https://github.com/Roker2/HelloROMScreenshots/raw/master/Descendant/2.png",
