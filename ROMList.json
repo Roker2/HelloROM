@@ -514,11 +514,10 @@
 	"Description": "ColtOS Project is presented by a team of learners and it is crafted from AOSP Source with all the necessary customizations, without compromising the stability and security of the device.\nWe have picked features from many other ROMs and we are grateful to all of them! We are happy to announce the release of Colt-OS Chilly based on Android 8.1.",
 	"SiteUrl": "https://sourceforge.net/projects/coltos/",
 	"GithubUrl": "https://github.com/ColtOS",
-	"Screenshots": ["https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/5/3/5/1/9/0/Screenshot_20180625-194741.jpg",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/5/3/5/1/8/9/Screenshot_20180625-194749.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/5/3/5/1/8/8/Screenshot_20180625-194800.jpg",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/5/3/5/1/8/7/Screenshot_20180625-194951.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/5/3/5/1/9/2/Screenshot_20180625-194347.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/5/3/5/1/9/1/Screenshot_20180625-194349.png"
+	"Screenshots": ["https://forum.xda-developers.com/attachments/screenshot_20200508-154024-png.5014597/",
+		"https://forum.xda-developers.com/attachments/screenshot_20200508-154206-png.5014599/",
+		"https://forum.xda-developers.com/attachments/screenshot_20200502-201041-png.5014595/",
+		"https://forum.xda-developers.com/attachments/screenshot_20200508-162720-png.5014601/",
+		"https://forum.xda-developers.com/attachments/500013000361_8551-jpg.5014603/"
 	]
 }]
