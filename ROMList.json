@@ -483,21 +483,7 @@
 	"Image": "https://avatars3.githubusercontent.com/u/16156670",
 	"Description": "Working together to bring you an Open Source OS, based on Android, that incorporates many customizations, options and added security features.",
 	"SiteUrl": "https://blissroms.com/",
-	"GithubUrl": "https://github.com/BlissRoms",
-	"Screenshots": ["https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/6/1/9/0/0/20181209_190853.jpg",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/5/0/5/Screenshot_Quickstep_20181116-210520.jpg",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/7/8/Screenshot_Settings_20181117-145144.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/7/9/Screenshot_Settings_20181117-145149.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/8/0/Screenshot_Settings_20181117-145155.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/8/1/Screenshot_Settings_20181117-145200.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/8/2/Screenshot_Settings_20181117-145206.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/8/3/Screenshot_Settings_20181117-145212.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/8/4/Screenshot_Settings_20181117-145217.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/4/4/8/8/5/Screenshot_Settings_20181117-145224.png",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/6/1/9/1/0/20181209_193429.jpg",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/6/1/9/5/1/Screenshot_2018-12-10-02-35-23.jpg",
-		"https://dl-xda--developers-com.cdn.ampproject.org/i/s/dl.xda-developers.com/direct/4/6/6/1/9/5/0/Screenshot_2018-12-10-02-34-15.jpg"
-	]
+	"GithubUrl": "https://github.com/BlissRoms"
 },
 {
 	"Name": "Dirty Unicorns",
