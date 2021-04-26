@@ -64,11 +64,7 @@
 	"Image": "https://avatars3.githubusercontent.com/u/50197624",
 	"Description": "Evolution X ROM. Based on PE. With customization from your favorite ROMs.",
 	"SiteUrl": "https://evolutionx.ml",
-	"GithubUrl": "https://github.com/Evolution-X",
-	"Screenshots": ["https://evolutionx.ml/img/screenshot/1.jpg",
-		"https://evolutionx.ml/img/screenshot/2.jpg",
-		"https://evolutionx.ml/img/screenshot/16.jpg"
-	]
+	"GithubUrl": "https://github.com/Evolution-X"
 },
 {
 	"Name": "Pixel Experience",
